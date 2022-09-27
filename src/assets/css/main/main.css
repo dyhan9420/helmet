@@ -1,0 +1,1563 @@
+@charset "utf-8";
+
+#content{/*background:#fafafa*/ background:#2F3136; min-height:inherit !important;padding:0 0 0 0 !important;margin-top:0px;}
+.row-w{max-width:1200px !important; overflow: hidden}
+
+/* 섹션 공통사항 */
+section{padding-top: 4rem; padding-bottom:4rem; margin-top:0;}
+/*
+section:last-child{margin-top:0;margin-bottom:0;}*/
+
+section:nth-child(2n+1){ }
+section:nth-child(2n){background: rgba(0,0,0,0.15); padding-top: 4rem; padding-bottom:4rem; margin-top:0;}
+section:first-child{padding-top:0; padding-bottom:0; margin-top:0}
+section:last-child{margin-top:0;margin-bottom:0;}
+
+section .subtit{margin:18px auto;width:100%;font-size:16px;font-weight:normal;color:#4c4c4c;}
+section .tit{margin:0 auto;width:100%;font-size:35px;color: rgba(60,159,253, 0.85);}
+.main-cont{width:100%;}
+/*.main-cont:nth-child(2n + 1){ background: rgba(0,0,0,0.15);
+padding: 4rem 0;}*/
+.half{width:49%;margin-left:2%}
+.half:first-child{margin-left:0;}
+.pc-list{margin-left:0;margin-bottom: 1.847656rem;}
+.main-more{ margin-left:0.5rem;font-size: 1.125rem;color: rgba(60,159,253, 0.85);padding-bottom: 0.25rem;vertical-align:middle;letter-spacing:-1px; letter-spacing:-0.0625rem;}
+.main-more:hover{font-size: 1.125rem; color: rgba(60,159,253, 0.65); text-decoration: underline;}
+.main-more i.fa{font-size: 1.5rem;/*margin-top: -0.75rem;*/margin-top:0;vertical-align: middle;}
+
+
+/* event 아이콘 */
+.all-list._1 .pc-list ul li.event:after{opacity: 0.8; position: absolute;display: inline-block;content: '';left: 0.5rem; top: 0.5rem;width: 2.5rem;height: 2.5rem;background: url(https://file.valofe.com/Valofe_file/web/vfun/images/common/blit-event.png) 0 0 no-repeat; background-size: 100% auto;}
+
+.hot-game li.event:after, .all-list._1 .mobile-list h2 + ul > li.event:after
+{opacity: 0.8; position: absolute;display: inline-block;content: '';left: 1rem; top: 1rem;width: 1.5rem;height: 1.5rem;background: url(https://file.valofe.com/Valofe_file/web/vfun/images/common/blit-event.png) 0 0 no-repeat; background-size: 100% auto;}
+
+/* new 아이콘 */
+.all-list._1 .pc-list ul li.new:after{opacity: 0.8; position: absolute;display: inline-block;content: '';left: 0.5rem; top: 0.5rem;width: 2.5rem;height: 2.5rem;background: url(https://file.valofe.com/Valofe_file/web/vfun/images/common/blit-new.png) 0 0 no-repeat; background-size: 100% auto;}
+
+.hot-game li.new:after, .all-list._1 .mobile-list h2 + ul > li.new:after
+{opacity: 0.8;position: absolute;display: inline-block;content: '';left: 1rem; top: 1rem;width: 1.5rem;height: 1.5rem;background: url(https://file.valofe.com/Valofe_file/web/vfun/images/common/blit-new.png) 0 0 no-repeat; background-size: 100% auto;}
+
+/* hot 아이콘 */
+.all-list._1 .pc-list ul li.hot:after{opacity: 0.8; position: absolute;display: inline-block;content: '';left: 0.5rem; top: 0.5rem;width: 2.5rem;height: 2.5rem;background: url(https://file.valofe.com/Valofe_file/web/vfun/images/common/blit-hot.png) 0 0 no-repeat; background-size: 100% auto;}
+.hot-game li.hot:after, .all-list._1 .mobile-list h2 + ul > li.hot:after
+{opacity: 0.8;position: absolute;display: inline-block;content: '';left: 1rem; top: 1rem;width: 1.5rem;height: 1.5rem;background: url(https://file.valofe.com/Valofe_file/web/vfun/images/common/blit-hot.png) 0 0 no-repeat; background-size: 100% auto;}
+
+
+
+
+/* ************ */
+/*      홈      */
+/* ************ */
+section h1{overflow-x:hidden;height: auto; line-height: 1;padding-bottom: 19.2px;padding-bottom:1.2rem; font-size:35px; font-size:2.1875rem; font-weight:normal;color:#fff;color:rgb(220, 221, 222);letter-spacing: -0.025rem;}
+
+
+/* 전체게임 바로가기 */
+.see-all-top{/*text-align: right; margin-top:2rem; margin-bottom: 10px;*/margin-top: 2rem;/*;margin-bottom: -3rem;*/z-index: 5;text-align: right;}
+.go-to-section{font-size: 25px;font-size: 1.5625rem;font-weight: normal;letter-spacing: -1px;letter-spacing: -0.0625rem;color:rgba(60,159,253, 0.85);}
+.go-to-section:visited{color:rgba(60,159,253, 0.85);}
+.go-to-section:hover, .go-to-section:focus{color: rgba(60,159,253, 0.65); text-decoration: underline;}
+/************************/
+/*  출시예정작          */
+/************************/
+#comingGame{padding-top:0;}
+/************************/
+/*  ./ 출시예정작       */
+/************************/
+/************************/
+/*  샵아이템 영역       */
+/************************/
+.pointshop .main-more i.fa{margin-top: 0;}
+/************************/
+/*  샵아이템 슬라이드   */
+#pointShop {overflow:hidden;width:115%;position:relative;}
+#pointShop .slick-slide {margin:0 0px;box-sizing:border-box;}
+#pointShop .slick-slide img {height:114px}
+#pointShop .slick-slide .item {box-sizing: border-box; width: 100%;}
+#pointShop .item a {outline: none; background: #fff; display: inline-block; width: calc(100% - 10px); height: 100%; box-sizing: border-box; margin: 0 5px;}
+#pointShop .item .pull-left{position:relative; box-sizing:border-box; width:35%; height:112px; background: #f2f2f2;}
+#pointShop .item .pull-left img{margin-top:0.25rem; height:100%;}
+#pointShop .item .pull-right{position:relative; box-sizing:border-box; width:65%; height:112px; padding: 1rem 0 1rem 1rem; background:#fff; border-left:none;}
+#pointShop h4{font-size:12px; color:#242424; margin-bottom: 0.6rem;}
+#pointShop h5{font-size:12px; color:#242424; margin-bottom:1rem; font-weight:normal;}
+#pointShop .price{position:absolute; left: 1rem; bottom: 0.8rem; font-size:12px; color:#242424; font-weight:normal;color:#242424; }
+#pointShop .price b{display: inline-block; width: 20px; height: 20px; line-height: 20px; border-radius: 10px; background: #00a3c0; color: #fff; font-weight: bold; font-size: 12px; text-align: center; margin-right:0.5rem; }
+#pointShop .price span{line-height: 20px;font-size: 12px;text-align:center;}
+
+/* 슬릭슬러이더 네비 버튼: 활성화 */
+#pointShop .slick-arrow, #pointShop .swiper-button-prev, #pointShop .swiper-button-next{position: absolute;display:block;z-index:1001; top:50%; margin-top:-36px;min-width:inherit;width:34px;height:100%;outline:none;}
+
+/* 슬릭슬러이더 네비 버튼: 활성화 */
+#pointShop .slick-btn-prev, #pointShop .swiper-button-prev{transition:all .2s linear;left:1rem; cursor:pointer; background: url(https://file.valofe.com/Valofe_file/web/vfun/images/home/pointshop/arr_cnt_l_off.png) left top no-repeat; background-size: 100%;}
+#pointShop .slick-btn-next, #pointShop .swiper-button-next{transition:all .2s linear;right:calc(15% - 1rem); cursor:pointer; background:url(https://file.valofe.com/Valofe_file/web/vfun/images/home/pointshop/arr_cnt_r_off.png) right top no-repeat; background-size: 100%;}
+
+/* 슬릭슬러이더 네비 버튼: 활성화 시 호버 */
+#pointShop .slick-btn-prev:hover{background:url(https://file.valofe.com/Valofe_file/web/vfun/images/home/pointshop/arr_cnt_l_on.png) left top no-repeat;}
+#pointShop .slick-btn-next:hover{background:url(https://file.valofe.com/Valofe_file/web/vfun/images/home/pointshop/arr_cnt_r_on.png) right top no-repeat;}
+
+
+/* 뉴스 */
+#main-event .slick-slide,
+#main-news .slick-slide{height:16.125rem;}
+.big-news, .small-news{position:relative;overflow:hidden;}
+.big-news .news-list, .small-news .news-list div{
+/*    background-image:url(https://file.valofe.com/Valofe_file/web/vfun/images/home/bg-article.jpg);
+    background-image: linear-gradient(to right top, #736891, #7479a5, #738bb8, #719dc9, #6fafd8);
+    opacity: 1;
+    background-size:cover;*/
+    background: rgba(0,0,0,0.15);
+}
+
+.big-news .news-list div a{display:inline-block; overflow:hidden; clear:both; width:100%; height: 100%; border:none; outline: none;}
+.big-news .news-list dl {box-sizing:border-box;}
+.big-news .news-list dl dt {font-size:12px;font-size:0.75rem;color:rgba(255,255,255,0.7);}
+.big-news .news-list dl dd{margin-top:5px;line-height:1.4;font-size:16px;font-size:1rem;color:#fff;}
+.big-news .news-list div .date {position:absolute;bottom:12px;left:24px;font-size:12px;font-size:0.75rem;color:rgba(255,255,255,0.7);}
+.big-news .news-list div.has-img {position:relative; height:100%;}
+.big-news .news-list div.has-img .date {position:relative; text-align:center; bottom:inherit; left:inherit; margin-top:0.5rem; font-size:12px;font-size:0.75rem;color:rgba(255,255,255,0.7);}
+
+.big-news .news-list div.has-img .news-left{float: none; box-sizing:border-box; width:100%;}
+.big-news .news-list div.has-img .news-right{position:relative; float: none; box-sizing:border-box; text-align:center; padding:10px; height: 65%;}
+.big-news .news-list div.has-img .news-right img{/*max-height: 100%; */max-width: 100%; width : auto; height: 100%; min-height:60% ; margin: 0px auto;}
+.big-news .news-list div.has-img .news-left{position:relative; display: block; box-sizing: border-box; width: 100%; padding: 10px 1rem; text-align:center;}
+
+.big-news .wrap-page-num {font-size: 12px;letter-spacing: 2px;font-weight:normal;vertical-align:middle;}
+.big-news .wrap-page-num .all-num{font-size: 15px;font-weight: bold;letter-spacing: 0px;margin-right: 5px;}
+
+/* big 이벤트 호버 효과 */
+
+.big-news .news-list:hover, .small-news .news-list div:hover {
+    background: rgba(0,0,0,0.35);
+    box-shadow: 0 0 8px 0 rgba(0, 0, 0, .5);
+    transition: all 1.25s linear;
+}
+
+.big-news li:hover .news-right img {
+    transition: all 0.75s cubic-bezier(.23,1,.32,1);
+    transform: scale(3) translateZ(0);
+    filter: blur(30px);
+}
+.small-news .news-list div:hover img {
+    transition: all 1.25s cubic-bezier(.23,1,.32,1);
+    transform: scale(3) translateZ(0);
+    filter: blur(30px);
+}
+
+.big-news .news-list div.has-img:hover .news-left {
+    box-sizing:border-box;
+    position: relative;
+    margin-top: -18%;
+    transition: all 1.25s cubic-bezier(.23,1,.32,1);
+}
+.big-news .news-list  div.has-img:hover dl{display:block;}
+.big-news .news-list  div.has-img:hover dl dt{color: #fff; font-size: 1.5rem; }
+.big-news .news-list:hover dl dd,
+.big-news .news-list:hover li.no-img dd.text{ /*color:#282828*/ color: #fff;}
+
+.ellipsis-multi:after{display:none;}
+.big-news .news-list:hover .ellipsis-multi:after {color:#4f4f4f;}
+
+
+.big-news .news-list div.has-img:hover .date {position:relative; display:block; margin-top:1.5rem; left: inherit; bottom: inherit; }
+
+
+
+.small-news .wrap-page-num {font-size: 12px;letter-spacing: 2px;font-weight:normal;vertical-align:middle;}
+.small-news .wrap-page-num .all-num{font-size: 15px;font-weight: bold;letter-spacing: 0px;margin-right: 5px;}
+.small-news .news-list{width:100%;overflow:hidden;position:relative;}
+.small-news .news-list div {float:left; width:100%; margin: 0 6.5px 0; display:inline-block;}
+.small-news .news-list div:first-child{margin-left: 0;}
+.small-news .news-list div a{clear:both; display:block;position:relative;height: 100%; border:none; outline: none;}
+.small-news .news-list .news-bottom{display:inline-block;width:100%; padding:1.5rem 1rem; box-sizing:border-box;}
+.small-news .news-list dl {box-sizing:border-box;}
+.small-news .news-list dl dt {font-size:12px;font-size:0.75rem;color:rgba(255,255,255,0.7);}
+.small-news .news-list:hover > dl > dt {font-size:24px;font-size:1.5rem;color:rgba(255,255,255,1);}
+.small-news .news-list dl dd{margin-top:5px;line-height:1.4;font-size:16px;font-size:1rem;color:#fff;}
+.small-news .news-list dl dd.ellipsis.e2{}
+.small-news .news-list .date {position:absolute;bottom:14px;right:24px;font-size:12px;font-size:0.75rem;color:rgba(255,255,255,0.7);}
+.small-news .news-list img{max-width:100%; outline:0; border:0;}
+.small-news .news-list div.has-img .news-top{height:65%;width:100%;overflow:hidden;}
+
+.big-news .news-list div.no-img{ background: url(https://file.valofe.com/Valofe_file/web/vfun/images/home/big-news-vfun-logo.png) center center no-repeat; background-size:contain}
+.big-news .news-list div.no-img .news-left{display:inline-block;width:100%; padding:1.5rem 24px; box-sizing:border-box;}
+.big-news .news-list div.no-img dt{padding-bottom: 10px;}
+.big-news .news-list div.no-img dd {margin-top: 15px;}
+.big-news .news-list div.no-img .news-left dt img {display: inline-block;vertical-align: middle;margin-top: 0px;margin-right: 3px;margin-left: 4px;width: 34px;height: 34px;border-radius: 17px;}
+.big-news .news-list div.no-img dd.text {color:rgba(255,255,255,0.6);font-size:0.875rem;margin-top:10px;}
+.big-news .news-list div.no-img .date {position:absolute;right:24px;text-align:right;}
+
+.big-news .news-list div.no-img .news-right{display:none;}
+
+/* small - 뉴스 리스트 호버 효과 */
+.small-news .news-list div.no-img .news-top{display:none}
+.small-news .news-list div.no-img a{position:relative;}
+.small-news .news-list div.no-img a:before{content:'';position:absolute;left:0;top:0;width:100%;height:100%;background:url(https://file.valofe.com/Valofe_file/web/vfun/images/home/small-news-vfun-logo.png) right bottom no-repeat; }
+.small-news .news-list div.no-img dt {padding-bottom: 10px;}
+.small-news .news-list div.no-img dt img {display: inline-block;vertical-align: middle;margin-top: 0px;margin-right: 3px;margin-left: 4px;width: 34px;height: 34px;border-radius: 17px;}
+.small-news .news-list div.no-img dl dd{margin-top:15px;}
+.small-news .news-list div.no-img dl dd.text {color:rgba(255,255,255,0.6);font-size:0.875rem;margin-top:10px;}
+
+.small-news .news-list div.has-img:hover .news-top{height:100%;}
+.small-news .news-list div:hover .news-bottom{
+    box-sizing:border-box;
+    position: absolute;
+    width:100%;
+    top: 30%;
+    bottom: inherit;
+    transition: all 3s cubic-bezier(.23,1,.32,1);
+
+}
+.small-news .news-list div:hover dl dd, .small-news .news-list div.no-img:hover dl dd.text{ color: #fff; }
+.small-news .news-list div:hover .ellipsis-multi:after {color:#4f4f4f;}
+.small-news .news-list div:hover .date {display: block; position: relative; left: inherit; bottom: inherit;
+    text-align: right; margin-top: 1rem; }
+/* 인기게임, 스탬프 랭킹 */
+.two-of-third{width:66.666666%;}
+.one-of-third{ box-sizing:border-box; width: calc(33.3333% - 10px); margin-left: 10px;}
+
+/* 인기게임 */
+.wrap-page-num{font-size:15px;font-weight:normal;vertical-align:middle;}
+.current-num{font-weight:bold;font-size:15px;}
+.cont-nav{clear:both;display:inline-block;margin-left:4px;vertical-align: middle;}
+
+.cont-nav .nav-prev,
+.cont-nav .nav-next{float:left;display:inline-block;margin-left:0;margin-right:0;padding:0;vertical-align:middle;text-align:center;
+    width:16px;height: 16px;line-height: 0px;border:1px solid #D1D1D1; background-color:#EEEEEE; color: #4f4f4f; cursor:pointer;
+    transition: all .2s linear;
+}
+.cont-nav .nav-prev .fa,
+.cont-nav .nav-next .fa{font-size:16px;}
+
+.hot-game h1{}
+
+.cont-nav .nav-prev:hover,
+.cont-nav .nav-next:hover{background-color: rgba(60,159,253, 0.85); border:1px solid rgba(60,159,253,1); color: #fff; }
+/* 리엑트 */
+.cont-nav-prev {position:absolute; top:-40px; right:18px;}
+.cont-nav-next {position:absolute; top:-40px; right:0px;}
+.cont-nav-prev,
+.cont-nav-next{float:left;display:inline-block;margin-left:0;margin-right:0;padding:0;vertical-align:middle;text-align:center;
+    width:16px;height: 16px;line-height: 0px;border:1px solid #D1D1D1; background-color:#EEEEEE; color: #4f4f4f; cursor:pointer;
+    transition: all .2s linear;}
+.cont-nav-prev .fa,
+.cont-nav-next .fa{font-size:16px;}
+.cont-nav-prev:hover,
+.cont-nav-next:hover{background-color: rgba(60,159,253, 0.85); border:1px solid rgba(60,159,253,1); color: #fff; }
+
+/*
+.hot-list{width:calc(100% - 9px);display:none;margin-right:9px;}
+.hot-list li{position: relative;box-sizing: border-box;display: block;float:left;}
+.hot-list li:first-child{width:calc(50% - 7px);margin-bottom:0; overflow:hidden; height:100%;}
+.hot-list li:first-child img{width:auto; min-height:100%;}
+.hot-list li:nth-of-type(2){width:calc(25% - 13px); float:left; margin-left:13px; margin-bottom:11px;}
+.hot-list li:nth-of-type(3){width:calc(25% - 13px); float:left; margin-left:13px; margin-bottom:11px;}
+
+.hot-list li:nth-of-type(4){width:calc(25% - 13px);float:left; margin-left:13px; }
+.hot-list li:nth-of-type(5){width:calc(25% - 13px);float:left; margin-left:13px; }
+
+.hot-list li a .img-area{position:relative;width:100%;}
+.hot-list li a .img-area > img{width:100%;display: inline-block;}
+.hot-list li a .img-area .logo{z-index:1;display:block;position:absolute;bottom:0.5rem;width:100%;text-align:center;}
+
+.hot-list li:nth-of-type(2) a .img-area .logo{z-index:1;display:inline-block;position:absolute;bottom:0.5rem;width:40%;left:50%; margin-left:-20%;text-align:center;}
+.hot-list li:nth-of-type(3) a .img-area .logo{z-index:1;display:inline-block;position:absolute;bottom:0.5rem;width:40%;left:50%; margin-left:-20%;text-align:center;}
+.hot-list li:nth-of-type(4) a .img-area .logo{z-index:1;display:inline-block;position:absolute;bottom:0.5rem;width:40%;left:50%; margin-left:-20%;text-align:center;}
+.hot-list li:nth-of-type(5) a .img-area .logo{z-index:1;display:inline-block;position:absolute;bottom:0.5rem;width:40%;left:50%; margin-left:-20%;text-align:center;}
+
+.hot-list li:nth-of-type(2) a .img-area .logo img,
+.hot-list li:nth-of-type(3) a .img-area .logo img,
+.hot-list li:nth-of-type(4) a .img-area .logo img,
+.hot-list li:nth-of-type(5) a .img-area .logo img{width:100%}
+
+*/
+
+/* 랭킹 */
+.ranking{}
+/* 랭킹 탭 메뉴 */
+.ranking .tab-rank{width:100%; border-bottom: 1px solid #575757; margin-bottom: 13px; margin-bottom:0.8125rem;}
+.ranking .tab-rank li{float:left;}
+.ranking .tab-rank li a {display:block; padding:0.5rem 2rem; font-size: 16px; font-size: 1rem; color: #575757; font-weight: bold; background:#fff; border-top: 1px solid #575757;transition: all .2s linear;}
+
+/* 랭킹 리스트 */
+.rank-list{display:none; padding: 0 0.5rem 0;}
+.rank-list li{float:none; padding-bottom: 0.5rem}
+.rank-list._1.on,
+.rank-list._2.on{display:block;}
+.rank-list .rank{display:inline-block; text-align:center; width:21px;height:21px;border-radius:50%; color:#fff; font-weight: bold; line-height:21px;}
+.rank-list .piling{display:inline-block;}
+.rank-list .blit{display:inline-block; margin-right: 0.25rem; vertical-align:middle; line-height: 1;  text-align:center; padding: 0.25rem 0.5rem 0.25rem 0.6rem; border-radius: 13px; font-size: 10px; letter-spacing: 0.5px; font-weight: bold; color:#fff; background: #0066cc; text-transform:uppercase;}
+.rank-list .num{display:inline-block; text-align: right; width: 4rem; font-size: 13px; font-size:0.8125rem;}
+.rank-list .rank{font-size: 11px; font-size: 0.6875rem; color: #fff; font-weight:bold; }
+.rank-list li strong{float: none; width: calc(100% - 11rem); display: inline-block; line-height: 1.4;  font-size: 13px; font-size: 0.8125rem; color: #242424; vertical-align: middle;}
+/* 랭킹 블릿 */
+/* 노란색 */
+.rank._1
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#feb33f+0,feb33f+15,feaa17+48,fd9404+51,fd9404+100 */
+{background: #feb33f; /* Old browsers */
+background: -moz-linear-gradient(-45deg,  #feb33f 0%, #feb33f 15%, #feaa17 48%, #fd9404 51%, #fd9404 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg,  #feb33f 0%,#feb33f 15%,#feaa17 48%,#fd9404 51%,#fd9404 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg,  #feb33f 0%,#feb33f 15%,#feaa17 48%,#fd9404 51%,#fd9404 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feb33f', endColorstr='#fd9404',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+border: 2px solid #fb963a;
+text-shadow: 0 1px 2px #fb963a;
+
+
+
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffc34f+0,ffc34f+15,feaa17+48,fd9404+51,fd9404+100 */
+background: #ffc34f; /* Old browsers */
+background: -moz-linear-gradient(-45deg,  #ffc34f 0%, #ffc34f 15%, #feaa17 48%, #fd9404 51%, #fd9404 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg,  #ffc34f 0%,#ffc34f 15%,#feaa17 48%,#fd9404 51%,#fd9404 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg,  #ffc34f 0%,#ffc34f 15%,#feaa17 48%,#fd9404 51%,#fd9404 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffc34f', endColorstr='#fd9404',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+
+
+/* 회색 */.rank._2{/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#a3a7ad+0,a3a7ad+15,81868e+48,626770+51,626770+100 */
+background: #898989; /* Old browsers */
+background: -moz-linear-gradient(-45deg,  #a3a7ad 0%, #a3a7ad 15%, #bcbcbc 48%, #898989 51%, #898989 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg,  #a3a7ad 0%,#a3a7ad 15%,#bcbcbc 48%,#898989 51%, #898989 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg,  #a3a7ad 0%,#a3a7ad 15%,#bcbcbc 48%,#898989 51%,#898989 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a7a7a7', endColorstr='#898989',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+border: 2px solid #898989;
+text-shadow: 0 1px 2px #898989;
+}
+
+/* 빨간색 */
+.rank._3{
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ec8973+0,ec8973+15,e55e40+48,c22a14+51,c22a14+100 */
+background: #ef850a; /* Old browsers */
+background: -moz-linear-gradient(-45deg,  #ef850a 0%, #ef850a 15%, #ee8108 48%, #e86300 51%, #e86300 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg,  #ef850a 0%,#ef850a 15%,#ee8108 48%,#e86300 51%,#e86300 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg,  #ef850a 0%,#ef850a 15%,#ee8108 48%,#e86300 51%,#e86300 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ef850a', endColorstr='#e86300',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
+border: 2px solid #e86300;
+text-shadow: 0 1px 2px #e86300;
+/*box-shadow: 2px 3px 3px rgba(0,0,0,0.5);*/
+}
+
+
+/* 짙은 회색 */
+.rank._4, .rank._5, .rank._6, .rank._7,.rank._8 {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#a3a7ad+0,a3a7ad+15,81868e+48,626770+51,626770+100 */
+    background: #a3a7ad; /* Old browsers */
+    background: -moz-linear-gradient(-45deg,  #a3a7ad 0%, #a3a7ad 15%, #81868e 48%, #626770 51%, #626770 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg,  #a3a7ad 0%,#a3a7ad 15%,#81868e 48%,#626770 51%,#626770 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg,  #a3a7ad 0%,#a3a7ad 15%,#81868e 48%,#626770 51%,#626770 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a3a7ad', endColorstr='#626770',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    border: 2px solid #42474f;
+    text-shadow: 0 1px 2px #42474f;
+    /*box-shadow: 2px 3px 3px rgba(0,0,0,0.5);*/
+}
+/* youtube */
+#___ytsubscribe_0{
+    vertical-align: middle !important;
+    margin-top: 1px !important;
+    margin-bottom: -1px !important;
+    margin-right: 4px !important;
+}
+
+.youtube-wrapper{}
+.youtube-wrapper .wrap-page-num{ font-size:12px;letter-spacing: 2px;}
+.youtube-wrapper .wrap-page-num .all-num{font-size:15px;font-weight:bold; letter-spacing: 0px;margin-right:5px;}
+
+.youtube-list{position:relative;clear-after: left;}
+#youtube li {float:left;box-sizing: border-box;display: block;}
+#youtube li .wrap-li { width: calc(100% - 13px); background:#fff; margin: 0 6.5px 10px;} /* react slick에 필요 */
+#youtube li:first-child {margin-left:0;}
+#youtube li a {display:inline-block;position:relative;width:100%;overflow:hidden;}
+#youtube li a img{min-width:100%; max-height: 154px;}
+#youtube li a:hover img{filter: blur(10px);}
+/* youtube play button */
+#youtube li a:after{transition:all .35s linear
+;content:'';display:inline-block; position:absolute; left:0; top:0; width:100%; height: 100%; background:url(https://file.valofe.com/Valofe_file/web/vfun/images/home/youtube/btn_play_on.png) center no-repeat; background-size:100%; opacity:0;}
+#youtube li a:hover:after {background-size:110%; opacity:1;}
+/* youtube article */
+#youtube dl { box-sizing: border-box; width:100%; float:none; text-align:left; padding:1.2rem 1.5rem 1.5rem; }
+#youtube dl dt{ box-sizing: border-box;font-size:1.125rem; line-height: 1.4; font-weight:bold; color:#242424; height:2.5rem;}
+#youtube dl dd{box-sizing: border-box; font-size:0.875rem; margin-top: 2rem; color:#242424;}
+
+/* youtube 슬릭슬러이더 네비 버튼: 활성화 */
+
+.youtube-list .slick-arrow{position: absolute;display:inline-block;z-index:1001; top:50%;  min-width:inherit;width:34px; height:74px; outline:none;}
+
+/* youtube 슬릭슬러이더 네비 버튼: 활성화 */
+.youtube-list .slick-btn-prev{display:inline-block;transition:all .35s linear;left:1rem; margin-top: calc(-37px - 1rem);cursor:pointer; background: url(https://file.valofe.com/Valofe_file/web/vfun/images/home/pointshop/arr_cnt_l_off.png) left center no-repeat; background-size: 100%; }
+.youtube-list .slick-btn-next{display:inline-block;transition:all .35s linear;right:1.75rem; margin-top: calc(-37px - 1rem);cursor:pointer; background:url(https://file.valofe.com/Valofe_file/web/vfun/images/home/pointshop/arr_cnt_r_off.png) right center no-repeat; background-size: 100%;}
+
+/* youtube 슬릭슬러이더 네비 버튼: 활성화 시 호버 */
+.youtube-list .slick-btn-prev:hover{margin-top: calc(-36px - 1rem);background:url(https://file.valofe.com/Valofe_file/web/vfun/images/home/pointshop/arr_cnt_l_on.png) left center no-repeat; }
+.youtube-list .slick-btn-next:hover{margin-top: calc(-36px - 1rem); background:url(https://file.valofe.com/Valofe_file/web/vfun/images/home/pointshop/arr_cnt_r_on.png) right center no-repeat; }
+
+
+/*중국 영상 */
+.mp4-list{position:relative;width:100%;overflow:hidden;}
+.mp4-list li{position:relative;width:100%;overflow:hidden;border:1px solid #efefef;}
+
+.mp4-list li video.v-mp4{width:100%;height:100%;}
+.mp4-list .g-name{position:absolute;display:inline-block;width:100%; height:30px;right:0;top:0px;
+    text-align:right;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+2,0+98 */
+    background: -moz-linear-gradient(top, rgba(0,0,0,0.65) 0%, rgba(0,0,0,0.65) 2%, rgba(0,0,0,0) 98%, rgba(0,0,0,0) 100%);
+    background: -webkit-linear-gradient(top, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.65) 2%,rgba(0,0,0,0) 98%,rgba(0,0,0,0) 100%);
+    background: linear-gradient(to bottom, rgba(0,0,0,0.65) 0%,rgba(0,0,0,0.65) 2%,rgba(0,0,0,0) 98%,rgba(0,0,0,0) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a6000000', endColorstr='#00000000',GradientType=0 );
+}
+.mp4-list .g-name a{display:inline-block;padding-right: 16px;padding-top:16px;}
+.mp4-list .g-name a .fa{margin-left:7px;}
+.mp4-list .g-name a, .mp4-list .g-name a .fa{font-size: 1.25rem;color:#fff;font-weight:bold;}
+.mp4-list .g-name a:hover,
+.mp4-list .g-name a:hover .fa,
+.mp4-list .g-name a:focus,
+.mp4-list .g-name a:focus .fa{color:#ff9900;}
+
+ /* 전체 게임 */
+.all-game .btn-type{display:inline-block; width:34px; height:35px; width:2.125rem; height:2.1875rem; border: 1px solid #575757; margin-left:0;  vertical-align:text-bottom;}
+.all-game .btn-type:nth-of-type(1){margin-left:1rem;}
+.all-game .btn-type._1{background:#fff url(https://file.valofe.com/Valofe_file/web/vfun/images/home/game/btn_view_box_off.png) center no-repeat; background-size: 100%; opacity:0.75}
+.all-game .btn-type._1:hover, .all-game  .btn-type._1.on{border: 1px solid #0066cc; background:#0066cc url(https://file.valofe.com/Valofe_file/web/vfun/images/home/game/btn_view_box_on.png) center no-repeat; background-size: 100%; opacity:1}
+.all-game .btn-type._2{background:#fff url(https://file.valofe.com/Valofe_file/web/vfun/images/home/game/btn_view_list_off.png) center no-repeat; background-size: 100%; opacity:0.75}
+.all-game .btn-type._2:hover, .all-game .btn-type._2.on{border: 1px solid #0066cc; background:#0066cc url(https://file.valofe.com/Valofe_file/web/vfun/images/home/game/btn_view_list_on.png) center no-repeat; background-size: 100%; opacity:1}
+
+.all-list{box-sizing:border-box; padding: 0rem;margin: 1rem 5px 0;}
+.all-list h2{ margin-bottom: 10px; padding-bottom: 10px; text-align:left;
+    font-size: 25px; font-size: 1.5625rem; font-weight:normal; /*color: #242424;*/
+    color: rgb(142, 146, 151);
+    letter-spacing: -1px; letter-spacing: -0.0625rem;
+}
+/* 타입별 display*/
+
+.all-list._1, .all-list._2{display:none; opacity:0; transition: all 0.5s ease-in-out}
+.all-list._1.on, .all-list._2.on{display: block; opacity:1; transition: all 0.5s ease-in-out}
+.all-list._1 .pc-list, .all-list._1 .mobile-list{display:block;}
+
+.all-list  h2 + ul  {width:100%; clear:both;}
+.all-list._2  h2 + ul{ box-sizing:border-box; padding: 1rem; background: rgba(0,0,0,0.15);}
+.all-list h2 + ul > li{overflow:hidden;float:left;
+    width: calc(33.3333% - 7px);
+    margin: 0px 0px 2rem 10px;
+    position: relative;
+    display: block;
+    box-sizing:border-box;
+    -webkit-transition: all .75s cubic-bezier(.23,1,.32,1);
+    -moz-transition: all .75s cubic-bezier(.23,1,.32,1);
+    -o-transition: all .75s cubic-bezier(.23,1,.32,1);
+    transition: all .75s cubic-bezier(.23,1,.32,1);
+    /*box-shadow: -1px 0 1px rgba(0,0,0,0.06);*/box-shadow: -1px 0 1px rgba(0,0,0,0.1);
+}
+
+
+.all-list._1 ul > li:nth-of-type(3n+1){margin-left:0;}
+
+.all-list._2 h2 + ul > li{border:none;box-shadow:none;}
+.all-list._2 h2 + ul > li a{position:relative;}
+.all-list._2 h2 + ul > li.event a:after{
+    content: '';
+    position:absolute;
+    display: inline-block;
+    opacity: 1;
+    top: 0.425rem;
+    right: -0.5rem;
+    width: 1rem;
+    height: 1rem;
+    background: url(https://file.valofe.com/Valofe_file/web/vfun/images/common/blit-event.png) 0 center no-repeat;
+    background-size: 100% auto;
+}
+.all-list._2 h2 + ul > li.new a:after{
+    content: '';
+    position:absolute;
+    display: inline-block;
+    opacity: 1;
+    top: 0.425rem;
+    right: -0.5rem;
+    width: 1rem;
+    height: 1rem;
+    background: url(https://file.valofe.com/Valofe_file/web/vfun/images/common/blit-new.png) 0 center no-repeat;
+    background-size: 100% auto;
+}
+.all-list._2 h2 + ul > li.hot a:after{
+    content: '';
+    position:absolute;
+    display: inline-block;
+    opacity: 1;
+    top: 0.425rem;
+    right: -0.5rem;
+    width: 1rem;
+    height: 1rem;
+    background: url(https://file.valofe.com/Valofe_file/web/vfun/images/common/blit-hot.png) 0 center no-repeat;
+    background-size: 100% auto;
+}
+/******* 스타일 정리 ********/
+
+.all-list._1 .pc-list h2 + ul > li{ width: calc(25% - 11px); margin-left: 10px;}
+.all-list._1 .pc_list h2 + ul > li:nth-of-type(4n+1){margin-left:0;}
+
+
+/* 백그라운드/보더 색상 :  게임 리스트*/
+.all-list._1 h2 + ul > li, li.mb-style, .all-list._1 .mobile-list h2 + ul > li{
+background:rgba(0,0,0,0.15) /* background: rgba(255,255,255,1);*//*rgba(79, 84, 92, 0.32);*//* border:1px solid #575757*/
+}
+/* 텍스트 색상 :  게임 리스트 */
+/* 게임 제목 */
+.all-list._1 .pc-list .normal dt,
+.all-list._1 .mobile-list .desc h3,
+li.mb-style .desc h3, .all-list._1 .pc-list .normal dd, .all-list._1 .pc-list .normal dd span.fa{ /*color: rgba(255,255,255,0.85);*/
+  color:#fff;/*  color: rgba(0,0,0,0.85); */font-weight: normal; letter-spacing: -0.025rem;
+}
+
+li.mb-style .desc h3, li.mb-style .img-area img{cursor:pointer;}
+
+.all-list._1 .pc-list .hover h3{color: rgba(255,255,255,0.85);}
+.all-list._1 .pc-list .hover p{/*color: #929292;*/ color: rgba(255, 255, 255, 0.75);}
+/* 게임 장르, 플랫폼, 유저 아이디, 포인트 */
+.all-list._1 .mobile-list .desc p, li.mb-style .desc p{ color:#fff;}
+.rank-list li strong, .rank-list .num{color: #9fa1a7;}
+.all-list._1 .pc-list .normal dd, .all-list._1 .mobile-list .desc p, li.mb-style .desc p{font-size: 0.875rem;}
+
+/* 탭버튼 색상 */
+.ranking .tab-rank .rank-type a { background: #575757; }
+.ranking .tab-rank .rank-type a:hover, .ranking .tab-rank li.rank-type.on a { background: #fff; color:#575757; }
+.ranking .tab-rank .rank-type a:last-child {border-right: 1px solid #575757;}
+.ranking .tab-rank .rank-type a:first-child {/*border-left: 1px solid #575757;*/ }
+.ranking .tab-rank .rank-type a {
+    display: block;
+    padding: 0.5rem 2rem;
+    font-size: 16px;
+    font-size: 1rem;
+    color: #fff;
+    font-weight: bold;
+    background: #575757;
+    transition: all .2s linear;
+}
+
+/* 전체 게임 박스 형 */
+.all-list._1 .pc-list ul li{}
+.all-list._1 .pc-list li .normal{width:100%; position: relative;box-sizing:border-box; transition: all .15s linear; cursor:pointer;}
+.all-list._1 .pc-list li:hover, .all-list._1 .pc-list li:active,
+.all-list._1 .mobile-list h2 + ul > li:hover, .all-list._1 .mobile-list h2 + ul > li:active,
+li.mb-style:hover, li.mb-style:active{box-shadow: 0 0 8px 0 rgba(0,0,0,.5);transition: all .2s linear;}
+li.mb-style .img-area.pc img{height: 7.875rem; object-fit: cover}
+
+.all-list._1 .pc-list .normal .tit{width:100%; position: relative;}
+.all-list._1 .pc-list .normal dl{width:100%;position: relative;padding:24px 14px; padding:1.5rem 0.875rem; box-sizing:border-box; border:none;}
+.all-list._1 .pc-list .normal dt{width:100%;position: relative;font-size:18px;font-size:1.125rem; height: 2.5em; font-weight: bold;}
+.all-list._1 .pc-list .normal dd{width:100%;position: relative;font-size:14px;font-size:0.875rem; font-weight:normal; margin-top:13px; margin-top:0.8125rem;}
+.all-list._1 .pc-list .normal dd span.fa{font-size:14px;font-size:0.875rem;font-weight:normal; }
+
+.all-list._1 .pc-list .img-area{ position: relative; overflow:hidden; width:100%;}
+.all-list._1 .pc-list .img-area > img{width:100%;}
+.all-list._1 .pc-list li .img-area > img{transition: all 1.75s cubic-bezier(.23,1,.32,1); }
+.all-list._1 .pc-list li:hover .img-area > img,
+.all-list._1 .pc-list li:active .img-area > img{transition: all 1.75s cubic-bezier(.23,1,.32,1); transform: scale(1.1) translateZ(0);
+    filter: blur(30px);
+}
+.all-list._1 .pc-list li:hover .img-area .logo,
+.all-list._1 .pc-list li:focus .img-area .logo{display:none;}
+
+.all-list._1 .pc-list .img-area .logo{z-index:1;display:block;position:absolute;bottom:0.5rem;width:100%;text-align:center; padding-bottom:0.8125rem;}
+.all-list._1 .pc-list .img-area .logo img{width: 51%;}
+
+
+.all-list._1 .pc-list .hover{/*box-sizing:border-box; z-index:2; position:absolute; left:0; top:0;
+    width: calc(100% + 1px);height:calc(100% - 7.4rem) ;padding: 16% 0.5rem 0.5rem;
+    text-align:center;vertical-align:center;opacity:0;
+    -webkit-transition: all 1.75s cubic-bezier(.23,1,.32,1);
+    -moz-transition: all 1.75s cubic-bezier(.23,1,.32,1);
+    -o-transition: all 1.75s cubic-bezier(.23,1,.32,1);
+    transition: all 1.75s cubic-bezier(.23,1,.32,1);
+    background-size: cover;*/
+    display: block;
+    box-sizing: border-box;
+    z-index: 100;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: calc(100% + 1px);
+    height: 100%;
+    padding: 24% 0.5rem 0.5rem;
+    text-align: center;
+    vertical-align: center;
+    opacity: 0;
+    -webkit-transition: all 1.75s cubic-bezier(.23,1,.32,1);
+    -moz-transition: all 1.75s cubic-bezier(.23,1,.32,1);
+    -o-transition: all 1.75s cubic-bezier(.23,1,.32,1);
+    transition: all 1.75s cubic-bezier(.23,1,.32,1);
+    background-size: cover;
+    background: rgba(0,0,0,0.65);
+}
+.all-list._1 .pc-list ul > li:hover .hover{opacity:1;
+    -webkit-transition: all 1.75s cubic-bezier(.23,1,.32,1);
+    -moz-transition: all 1.75s cubic-bezier(.23,1,.32,1);
+    -o-transition: all 1.75s cubic-bezier(.23,1,.32,1);
+    transition: all 1.75s cubic-bezier(.23,1,.32,1);
+   /* background-image:linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 40%, rgba(255,255,255,.6) 100%);
+    background-repeat:no-repeat;background-size: 200% 100%; */
+}
+
+.all-list._1 .pc-list .hover:before{box-sizing:border-box;content:'';position:absolute;left:0;top:0;width:100%;height:100%;z-index: -1;}
+
+.all-list._1 .pc-list .hover:before{}
+.all-list._1 .mobile-list .hover-desc:before{ background-color:rgba(0,0,0,0.90); }
+
+.all-list._1 .pc-list .hover h3{font-size:18px; font-size: 1.125rem;font-weight:bold;text-align:center;}
+.all-list._1 .pc-list .hover p{margin-top:0.5rem;margin-bottom: 1.5rem; font-size:16px;font-size:1rem;font-weight:normal;text-align:center;}
+
+/* PC 버튼들 */
+.all-list._1 .pc-list .hover a {box-sizing:border-box; float:left; margin-bottom:0.5rem; margin-left:0.25rem;margin-right:0.25rem; display:block;height: 2.5rem;
+    line-height: 2.5rem;width:calc(50% - 0.25rem);font-size: 14px; font-size: 0.875rem; font-weight:bold; text-align:center; color:#fff;
+    background-size: 0% 100%;
+    transition: all .5s;
+}
+.all-list._1 .pc-list .hover a:nth-of-type(2n+1){margin-left:0;}
+.all-list._1 .pc-list .hover a:nth-of-type(2n){margin-right:0;}
+.all-list._1 .pc-list .hover a:nth-of-type(3), .all-list._1 .pc-list .hover a:nth-of-type(4){ margin-bottom:0; }
+.all-list._1 .pc-list  ul > li:hover .hover a:hover{color:#fff;font-weight:bold;
+    background-color: rgba(60,159,253, 0.85);
+    background-image:linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 40%, rgba(255,255,255,.6) 100%);
+    background-repeat:no-repeat;background-size: 200% 100%; transition:background-size 0.5s 0.25s, background-image 0.5s 0.25s, background-color 0.5s 0.25s;
+}
+
+
+.all-list._1 .pc-list .hover a, .mobile-list .btn-mb-download,
+li.mb-style .download-multi .a-wrap,
+li.mb-style p + .btn-mb-download{ /*background-color:rgba(255,255,255,1); */ background-color:rgba(166,211,255,0.15); color:rgba(255,255,255,0.5) }
+li.mb-style p + .download-multi .a-wrap{background-color: transparent;}
+
+.all-list._1 .pc-list ul li:hover .hover a,
+.all-list._1 .mobile-list > ul > li:hover .btn-mb-download,
+li.mb-style .download-multi .a-wrap:hover{/*background-color: #fff;color:#242424;*/ background-color: rgba(166,211,255,0.45);}
+
+/*{
+    color: #fff;
+    background-color: rgb(41, 43, 47);
+}*/
+
+/* 전체 게임 리스트 형*/
+.all-list._1 .mobile-list  h2 + ul > li {margin-bottom: 10px;}
+.all-list._1 .mobile-list .default {width:100%;padding: 0.5rem;box-sizing:border-box;}
+
+.all-list._1 .mobile-list .default .hover h3{font-size:18px; margin-top:48px; margin-top:3rem;font-weight:bold;color:#242424;text-align:center;}
+.all-list._1 .mobile-list .default .hover p{margin-top:0.5rem;margin-bottom: 1.5rem;font-size:16px;font-weight:normal;color:#242424;text-align:center;}
+
+.all-list._1 .mobile-list .img-area{float:left; width: 9rem;}
+.all-list._1 .mobile-list .img-area > img{width: 7.875rem; border-radius: 3px; border-radius: 3px;}
+
+.all-list._1 .mobile-list .desc{margin-top: 1rem;}
+.all-list._1 .mobile-list .desc h3{height: 2.5rem;}
+.all-list._1 .mobile-list .desc p {margin-top: 0.5rem;}
+
+.all-list._1 .mobile-list .hover-desc{box-sizing:border-box;z-index:2;position:absolute;left:0;top:100%;width:100%;height:100%;padding: 0.7rem 0.5rem 0;
+    text-align:center;vertical-align:center;opacity:0;
+    -webkit-transition: opacity 1.75s cubic-bezier(.23,1,.32,1);
+    -moz-transition: opacity 1.75s cubic-bezier(.23,1,.32,1);
+    -o-transition: opacity 1.75s cubic-bezier(.23,1,.32,1);
+    transition: opacity 1.75s cubic-bezier(.23,1,.32,1);
+}
+
+.all-list._1 .mobile-list > ul > li:hover .hover-desc{opacity:1;top:0;
+    -webkit-transition: opacity 1.75s cubic-bezier(.23,1,.32,1);
+    -moz-transition: opacity 1.75s cubic-bezier(.23,1,.32,1);
+    -o-transition: opacity 1.75s cubic-bezier(.23,1,.32,1);
+    transition: opacity 1.75s cubic-bezier(.23,1,.32,1);
+}
+.all-list._1 .mobile-list > ul > li:hover .img-area{filter: blur(30px)}
+.all-list._1 .mobile-list .hover-desc:before{box-sizing:border-box;content:'';position:absolute;left:0;top:0px;width:calc(100% + 1px);height: calc(100% + 1px);
+    /* background:rgba(255,255,255,0.95);*/ z-index: -1;}
+.all-list._1 .mobile-list .hover-desc h3{margin-top: 0rem; font-size:18px;font-size: 1.125rem;font-weight:bold; color:#fff;text-align:center;}
+.all-list._1 .mobile-list .hover-desc p{ margin-top:0.5rem ;margin-bottom: 0.5rem; font-size:16px ;font-size:1rem; font-weight:normal;
+    color:#929292; text-align:center;
+}
+
+/* 모바일 버튼들 */
+.btn-mb-download{
+    box-sizing:border-box; display:inline-block; float:left; margin-left: 0.5rem; margin-bottom:0.5rem; height:2rem; line-height: 2.7;
+    width:calc(50% - 0.25rem);font-size: 14px; font-size: 0.875rem; font-weight:bold; text-align:center;
+    background-size: 0% 100%;
+    transition: all .5s;
+}
+/*
+.btn-mb-download:nth-of-type(1){/margin-left:0;}
+.btn-mb-download:nth-of-type(2){margin-left:0.25rem;}
+.btn-mb-download:nth-of-type(3){margin-left:0;}
+.btn-mb-download:nth-of-type(4){margin-left:0.25rem;}
+*/
+
+.btn-mb-download:nth-child(2n+1){margin-left: 0;}
+
+.btn-mb-download.one{line-height:inherit;vertical-align:middle;}
+.all-list._1 .mobile-list > ul > li:hover .btn-mb-download:hover,
+li.mb-style:hover .btn-mb-download:hover,
+li.mb-style:hover p + .btn-mb-download:hover {
+    color:#fff; background-color: rgba(60,159,253, 0.85);
+    background-image:linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 40%, rgba(255,255,255,.6) 100%);
+    background-repeat:no-repeat;background-size: 200% 100%; transition:background-size 0.5s 0.25s, background-image 0.5s 0.25s, background-color 0.5s 0.25s;
+}
+li.mb-style:hover p + .download-multi .a-wrap{background-color: transparent;}/* 인기게임 a-wrap 백그라운드 삭제 */
+
+/* 모바일 다운로드 : 멀티 아이콘 */
+.download-multi{text-align:center}
+.download-multi .a-wrap {box-sizing:border-box;display:inline-block;width:100%; padding:0;  vertical-align:middle; text-align:center;  background-color: rgba(166,211,255,0.15);}
+.mobile-list .download-multi .a-wrap{background-color: transparent;}
+.download-multi .a-wrap a {display:inline-block; max-height:100%; margin-right:0.25rem; vertical-align:middle;}
+.download-multi .a-wrap a:nth-of-type(2n+1){margin-left:0;}
+.download-multi .a-wrap .fa{display:inline-block; line-height:1; width:22px; height: 22px; font-size:22px; vertical-align: middle; border-radius: 50%; color:#fff;}
+.download-multi a.pc .fa{background:#F75D57;}/*pc*/
+.download-multi a.and .fa{background:#B2CD49;}/*and*/
+.download-multi a.ios .fa{background:#76cfe2;}/*ios*/
+.download-multi a.mb-icon img{width:1.5rem; height: 1.5rem; padding-top: 0.25rem; vertical-align: middle;}/* pc, and, ios 외 */
+.mobile-list .download-multi a.mb-icon img{width:1.5rem; height: 1.5rem; padding-top: 0.25rem; vertical-align: top;}/* pc, and, ios 외 */
+
+
+
+/* 전체 게임 리스트 형*/
+.all-list._2 ul li{
+    float:left; width:24%;
+    position: relative;
+    box-sizing: border-box;
+    display: block;
+    line-height: 1.75rem;
+    padding: 0px;
+    margin-bottom: 0.5rem;
+}
+.all-list._2 ul li a{display:inline-block; box-sizing:border-box;width: auto; padding-right:2rem; color:#929292;font-size:14px;font-size:0.875rem;font-weight: normal;vertical-align:middle;}
+.all-list._2 ul li a:hover{/*color: rgba(60,159,253, 0.85); */color:rgba(60,159,253, 0.85);font-weight: normal;}
+.all-list._2 ul li a img{margin-right:5px;vertical-align:middle;width:1.75rem;height:1.75rem;border-radius:50%;}
+
+.all-list._2 ul li:nth-of-type(4n+1){margin-left:0;}
+
+/* 인기 게임 리스트 */
+
+li.mb-style {
+    overflow: hidden;
+    float: left;
+    width: calc(50% - 5px);
+    margin: 0px 0px 30px 10px;
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    margin-bottom: 2rem;
+    -webkit-transition: all .75s cubic-bezier(.23,1,.32,1);
+    -moz-transition: all .75s cubic-bezier(.23,1,.32,1);
+    -o-transition: all .75s cubic-bezier(.23,1,.32,1);
+    transition: all .75s cubic-bezier(.23,1,.32,1);
+}
+li.mb-style .btn-mb-download{ width: calc(100% - 9rem); }
+li.mb-style .btn-mb-download:nth-of-type(1){ margin-top: 0.5rem; margin-left:0; margin-bottom: 0;}
+li.mb-style:nth-of-type(2n+1) {
+    margin-left: 0;
+}
+
+li.mb-style .default{
+    width: 100%;
+    padding: 0.5rem;
+    box-sizing: border-box;
+}
+li.mb-style .img-area {
+    float: left;
+    width: 9rem;
+}
+li.mb-style .img-area img{ width: 7.875rem; border-radius: 3px; }
+li.mb-style .desc{ margin-top: 1rem; }
+
+li.mb-style .desc h3 {
+    height: 2.5rem;
+    font-size: 18px;
+    font-size: 1.125rem;
+    letter-spacing: 0px;
+}
+
+li.mb-style .desc p {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    height: 0.825rem;
+    overflow: hidden;
+}
+
+li.mb-style:nth-child(3), li.mb-style:nth-child(4){margin-bottom:0;}
+/* 메인 : 미션 리스트 */
+
+/* youtube missionlist */
+.youtube-list.game-line .game-image img {width: 100%;height: 100%;border-radius: 8px;}
+.youtube-list.game-line .ea li{clear: inherit;margin-bottom: inherit;}
+.youtube-list.game-line li a:after {display:none;}
+.youtube-list.game-line li a:hover:after {display:none;}
+.youtube-list.game-line ul.mission-list li{float:none;padding-top:15px; padding-bottom:15px; border-bottom:1px solid #e6e6e6;}
+.youtube-list.game-line ul.mission-list li:first-child{padding-top:0px; }
+.youtube-list.game-line ul.mission-list li  ul li{list-style:none; float:none; border:none; padding-bottom:0;}
+.youtube-list.game-line ul.mission-list li  ul li:before{content:'';}
+.youtube-list.game-line ul.mission-list li:last-child{border-bottom:none;}
+
+.youtube-list.game-line .game-image{position:relative;box-sizing:border-box;width:88px;height:88px;text-align:left;}
+.youtube-list.game-line .game-image img{width:100%;margin-left:2px;}
+.youtube-list.game-line .game-image.event:after{position: absolute;display: inline-block;content: '';left: 0;top: 10px;width: 30px;height: 30px;background: url(https://file.valofe.com/Valofe_file/web/vfun/images/common/blit-event.png) 0 0 no-repeat;
+
+    background-size: contain;}
+.youtube-list.game-line .game-image.new:after{position: absolute;display: inline-block;content: '';left: 0;top: 10px;width: 30px;height: 30px;background: url(https://file.valofe.com/Valofe_file/web/vfun/images/common/blit-new.png) 0 0 no-repeat;}
+.youtube-list.game-line .game-image.hot:after{position: absolute;display: inline-block;content: '';left: 0;top: 10px;width: 30px;height: 30px;background: url(https://file.valofe.com/Valofe_file/web/vfun/images/common/blit-hot.png) 0 0 no-repeat;}
+
+.youtube-list.game-line .game-txt{position:relative;box-sizing:border-box;padding-top: 10px;padding-left:26px;width: calc(100% - 88px);/*127 + 85 */text-align:left;}
+.youtube-list.game-line .game-line-cont h2{margin-top:4px;margin-bottom:0px;font-size:32px;font-weight:bold; text-align:left; color:#242424; line-height:1.2;
+    letter-spacing:-0.0625rem;
+}
+.youtube-list.game-line .game-line-cont .fa{margin-right:4px;text-align:center;height:inherit;/*line-height: 1.2;*/font-size:14px;}
+
+.youtube-list.game-line .game-line-cont .btn-wrap{margin-top:16px;}
+.youtube-list.game-line .game-line-cont .game-desc{font-size:12px;font-size:0.75rem;line-height:1.2;font-weight:bold;color: rgba(60,159,253, 0.85);}
+.youtube-list.game-line .game-line-cont .game-event{font-size:12px;font-size:0.75rem;line-height:1.2;font-weight:normal;color:#444;}
+.youtube-list.game-line .game-line-cont .game-desc .game-tit {color: #444;font-weight: bold;text-align: center;font-size: 18px;}
+.youtube-list.game-line .game-line-cont .game-desc .pull-left {width:calc(100% - 140px);}
+.youtube-list.game-line .game-line-cont .game-desc .pull-right {width:140px;}
+
+.youtube-list.game-line .game-desc .game-info{margin-top: 17px;margin-bottom: 5px;}
+.youtube-list.game-line .game-desc .wrap-device-all {display: inline-block;width: auto;padding: 0px 16px 0px 0;}
+.youtube-list.game-line .wrap-device{display:inline-block;width:auto;margin-top:0px;margin-right:10px;text-align:right;}
+
+.youtube-list.game-line .game-line-cont .device-txt{position:relative;padding-left:4px;font-size: 12px;color:#444;}
+.youtube-list.game-line .game-line-cont .device-txt:after{content: '\00b7';position: absolute;left: -12px;top: 0px;margin: 0px 7px 0;display: inline-block;font-size: 16px;font-weight: bold;color: #444;}
+.youtube-list.game-line .game-desc .fa{font-size:12px;}
+.youtube-list.game-line .game-desc a.btn{text-align:left;
+    display: inline-block;
+    margin: 0;
+    padding: 0 8px;
+    width: auto;
+    height: 1.2rem;
+    vertical-align:middle;
+    min-width: inherit;
+    border-radius: 1.2rem;
+    color: rgba(60,159,253, 0.85);
+    font-size: 10px;
+    font-weight: bold;
+    line-height: 1.2rem;
+    border: 1px solid #0066cc;
+    background: none;
+    align-items: inherit;
+}
+.youtube-list.game-line .game-desc a.btn:hover{color: #000;background: #0066cc;}
+
+.youtube-list.game-line .download-num {color: #a2a5ac;font-size: 15px;font-size:0.9375rem;margin-left:inherit;margin-right:1rem;vertical-align: middle;}
+.youtube-list.game-line .like-num {color: #a2a5ac;font-size: 15px;font-size:0.9375rem;margin-left:inherit;margin-right:1rem;vertical-align: middle;}
+
+.youtube-list.game-line .row-w.padding-none {margin:2rem auto; padding:0; background:none; border-top:0;}
+.youtube-list.game-line .wrap-btn { width: 100%; max-width:100%;background:none; }
+.youtube-list.game-line .wrap-btn  a.more{margin-top: 0 ; display:block; padding:1rem 0; width:100%; color:#000;font-size:1rem;border:1px solid #e3e3e3;background:#fff;}
+.youtube-list.game-line .wrap-btn  a.more .fa{color:#000;font-size:1rem;vertical-align:middle;}
+.youtube-list.game-line .wrap-btn  a.more:hover, .game-line .wrap-btn  a.more:hover .fa{background:#139bb8;color:#000;}
+
+.youtube-list.game-line ul.ea{float:left;width:auto; padding-left: 10px; padding-right: 30px;}
+.youtube-list.game-line ul.ea li{float:none;width:100%;color:#444;text-align:center;}
+.youtube-list.game-line ul.ea li.bubble span{display:none;width:45px;height:36px;line-height:32px;font-size:12px;vertical-align:middle;color:#fff;background:url(https://file.valofe.com/Valofe_file/web/vfun/images/sub/stamp/stamp-bubble.png) 0 0 no-repeat;background-size:100%;}
+.youtube-list.game-line li.times ul.ea li.bubble span{display:inline-block;}
+
+.youtube-list.game-line ul.ea li div{width:96px;display:block;text-align:center;}
+.youtube-list.game-line ul.ea li div i{}/* 모바일일 때만 히든 */
+.youtube-list.game-line ul.mission-list li.times ul.ea li.bubble  + li div{margin-top:0;}
+.youtube-list.game-line ul.ea li em{font-weight:bold;text-align:center;}
+
+/* 미션 리스트 상세 설명*/
+.youtube-list.game-line .desc{font-size:13px;color:#444;padding-top:8px;padding-left:17px;line-height:1.4;height:55px;}
+.youtube-list.game-line .reset-time{margin-top: 15px;font-size:13px;color:#444;padding-left:0px;line-height:1.4;}
+.youtube-list.game-line .show-mobile{display:none;}
+.youtube-list.game-line .show-desktop{display:inline;}
+.youtube-list.game-line .reset-time .em{color:#139bb8; display:block; margin-bottom:5px;}
+.youtube-list.game-line .reset-bg{display:inline-block;color:#fff;background:#a2a5ac;padding:1px 4px; margin-right:3px; border-radius: 2px; font-size:11px;}
+.youtube-list.game-line .ellipsis-multi:after {
+    display: inline-block;
+    display:none;
+    position: absolute;
+    right: 0;
+    bottom: 0px;
+    content: '+';
+    padding-right: 9px;
+    width: 4px;
+    height: 17px;
+    line-height: 16px;
+    border-radius: 3px;
+    font-size: 13px;
+    font-weight: bold;
+    background: #efefef;
+    color: #000;
+    text-align:center;
+    -webkit-transition: all .75s cubic-bezier(.23,1,.32,1);
+    -moz-transition: all .75s cubic-bezier(.23,1,.32,1);
+    -o-transition: all .75s cubic-bezier(.23,1,.32,1);
+    transition: all .75s cubic-bezier(.23,1,.32,1);
+}
+
+.youtube-list.game-line .desc .icon-mission{display:inline-block;vertical-align:middle;margin-left:-17px;margin-right:3px;}
+/* ./ 메인 : 미션 리스트 */
+/* 메인 광고 */
+.main-cont.ad{}
+.wrap-ad-img{margin:0 0.5rem; height:auto; color: #242424; text-align:center;}
+.wrap-ad-img a{display:inline-block;width: 49%;}
+.wrap-ad-img a img{ width: 100%;}
+.wrap-ad-img a img.bg-black {border: 1px solid #1a1a1a;}
+.wrap-ad-img .left{margin-right:1%;float:left;}
+.wrap-ad-img .right{margin-left:1%;float:right;}
+
+
+/* 출시예정 게임 슬라이드 */
+#coming_soon{display:block;overflow:hidden;width: 100%;clear:both}
+#coming_soon{overflow: hidden;}
+#coming_soon .item{
+cursor:pointer;
+overflow: hidden;
+height:8.875rem;
+width:100%;/* 1개 */
+/*width: calc(33.3333% - 10px); 3개*/
+/*width:calc(50% - 10px);*//* 2개*/
+margin: 0 0 0 10px;
+position: relative;
+display: block;
+box-sizing: border-box;
+-webkit-transition: all .75s cubic-bezier(.23,1,.32,1);
+-moz-transition: all .75s cubic-bezier(.23,1,.32,1);
+-o-transition: all .75s cubic-bezier(.23,1,.32,1);
+transition: all .75s cubic-bezier(.23,1,.32,1);
+box-shadow: -1px 0 1px rgba(0, 0, 0, 0.1);
+background: rgba(0,0,0,0.15);
+}
+#coming_soon .slick-arrow{position: absolute;display:block;z-index:1001; top:calc(4.5rem - 37px);min-width:inherit;width:34px;height:100%;outline:none;background:red}
+
+/* 슬릭슬러이더 네비 버튼: 활성화 */
+#coming_soon .slick-btn-prev{transition:all .2s linear;left:1rem; cursor:pointer; background: url(https://file.valofe.com/Valofe_file/web/vfun/images/home/pointshop/arr_cnt_l_off.png) left top no-repeat; background-size: 100%;}
+#coming_soon .slick-btn-next{transition:all .2s linear;right:1rem; cursor:pointer; background:url(https://file.valofe.com/Valofe_file/web/vfun/images/home/pointshop/arr_cnt_r_off.png) right top no-repeat; background-size: 100%;}
+
+/* 슬릭슬러이더 네비 버튼: 활성화 시 호버 */
+#coming_soon .slick-btn-prev:hover{background:url(https://file.valofe.com/Valofe_file/web/vfun/images/home/pointshop/arr_cnt_l_on.png) left top no-repeat;}
+#coming_soon .slick-btn-next:hover{background:url(https://file.valofe.com/Valofe_file/web/vfun/images/home/pointshop/arr_cnt_r_on.png) right top no-repeat;}
+
+#coming_soon .default{
+    width: 100%;
+    padding: 0.5rem;
+    box-sizing: border-box;}
+#coming_soon .img-area{
+    float: left;
+    width: 9rem;
+}
+#coming_soon  .img-area >img {
+    height: 7.875rem;
+    object-fit: cover;
+    border-radius: 3px;
+}
+#coming_soon .desc{margin-top: 1rem;}
+#coming_soon .desc h3 {
+    height: 2rem;
+    font-size: 18px;
+    font-size: 1.125rem;
+    letter-spacing: 0px;
+    color: #fff;
+    font-weight: normal;
+}
+
+#coming_soon .short-desc{
+    display: inline;
+    line-height:1.3;
+    font-size: 14px;
+    letter-spacing: 0.2px;
+    color:rgba(255,255,255,1);
+    font-weight: normal;
+    max-height: 3.4rem;
+}
+
+#coming_soon .short-desc.ellipsis-multi:after{display:inline-block;position:absolute;right:0;bottom:0;content:'';padding-left:8px;padding-left:0.5rem;
+    width:32px;width:2rem;font-size:16px;font-size:1rem;background:#7387A5;color:#fff;
+    -webkit-transition: all .75s cubic-bezier(.23,1,.32,1);
+    -moz-transition: all .75s cubic-bezier(.23,1,.32,1);
+    -o-transition: all .75s cubic-bezier(.23,1,.32,1);
+    transition: all .75s cubic-bezier(.23,1,.32,1);
+    font-family:'Verdana';
+    background:rgba(0,0,0,.15);
+}
+
+#coming_soon .desc .platform {
+    overflow: hidden;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    height: 0.825rem;
+    padding-bottom: 0.175rem;
+    font-size: 0.875rem;
+}
+#coming_soon .item:hover .hover-desc {
+    opacity: 1;
+    top: 0;
+    -webkit-transition: opacity 1.75s cubic-bezier(.23,1,.32,1);
+    -moz-transition: opacity 1.75s cubic-bezier(.23,1,.32,1);
+    -o-transition: opacity 1.75s cubic-bezier(.23,1,.32,1);
+    transition: opacity 1.75s cubic-bezier(.23,1,.32,1);
+    background: rgba(0,0,0,0.95);
+}
+#coming_soon .hover-desc{
+    box-sizing: border-box;
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    height: 100%;
+    padding: 0.7rem 0.5rem 0;
+    text-align: center;
+    vertical-align: center;
+    opacity: 0;
+    -webkit-transition: opacity 1.75s cubic-bezier(.23,1,.32,1);
+    -moz-transition: opacity 1.75s cubic-bezier(.23,1,.32,1);
+    -o-transition: opacity 1.75s cubic-bezier(.23,1,.32,1);
+    transition: opacity 1.75s cubic-bezier(.23,1,.32,1);
+}
+#coming_soon .item .hover-desc h3 {
+    margin-top: 0rem;
+    font-size: 18px;
+    font-size: 1.125rem;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+}
+
+#coming_soon .item .hover-desc .platform {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 16px;
+    font-size: 1rem;
+    font-weight: normal;
+    color: #929292;
+    text-align: center;
+}
+#coming_soon .desc .platform .fa{
+    line-height:1.2;
+}
+#coming_soon .btn-mb-download {
+    /* background-color: rgba(255,255,255,1); */
+    background-color: rgba(166,211,255,0.15);
+    color: rgba(255,255,255,0.5);
+}
+#coming_soon .btn-mb-download:hover {
+    background-color: rgba(166,211,255,0.45);
+}
+
+
+
+@media screen and (max-width: 1766px){
+    .sliderContainer .slick-slide article {font-size: 0.9em;left: calc(50% - 600px)}
+}
+@media screen and (max-width: 1624px){
+    .sliderContainer .slick-slide article {font-size: 0.8em;}
+}
+@media screen and (max-width: 1456px){
+    .sliderContainer .slick-slide article {font-size: 0.7em;}
+}
+@media screen and (max-width: 1380px){
+    .sliderContainer .slick-slide article {font-size: 0.75em;}
+}
+
+@media screen and (max-width: 1600px){
+    .owl-carousel .owl-video-wrapper {
+        width: 560px;
+        height: 315px;
+        margin-top:-157.5px;
+    }
+}
+
+@media screen and (max-width:1533px){
+    /*.sliderContainer .progressBarContainer{ width: 1281px; left: 50%; margin-left: -640px; }*/ /*6개*/
+}
+@media screen and (max-width:1440px){
+
+  /*  .item article .tit{padding-top:0;font-size: 2rem;}
+    .item article .sub{font-size: 1rem;}
+*/
+    /*게임 : 홈: 슬라이드 */
+   /* section:first-child.visual{margin-top:0;}
+    section:first-child.visual .row-w{width:100% !important;max-width:inherit !important;padding:0;margin:0;}*/
+}
+
+@media screen and (max-width:1280px) {
+
+    /* home 슬라이드 1 */
+    .sliderContainer .slick-slide article{
+        width: 96%;
+    }
+    .sliderContainer .progressBarContainer {
+        width: 96%;
+        /*margin-left: -48%;*/ /* 6개 */
+        margin-left: 2%;/* 8개 */
+    }
+
+    .sliderContainer article img.logo {
+        height: 2.5em;
+    }
+
+    .sliderContainer article .tit {
+        font-size: 1em;
+    }
+
+    .sliderContainer .btn-more {
+        clear: both;
+        line-height: 1em;
+        font-size: .8em;
+        width: auto;
+        height: 1em;
+        padding: .5em 2em;
+    }
+
+    /* 게임 리스트 */
+    .all-list._1 .mobile-list .img-area {
+        width: 8.75rem;
+    }
+
+    .all-list._1 .mobile-list .hover-desc h3 {
+        margin-top: 0.3rem;
+        margin-bottom: 1rem;
+    }
+
+    .all-list._1 .mobile-list .hover-desc p {
+        display: none;
+    }
+
+    .btn-mb-download {
+        height: 2.35rem;
+        line-height: 2.35rem;
+    }
+
+    li.mb-style .img-area {
+        width: 9.25rem;
+    }
+
+    li.mb-style .img-area img {
+        width: 8.2rem;
+    }
+
+    li.mb-style .btn-mb-download {
+        margin-top: 0;
+        width: calc(100% - 11rem);
+    }
+
+    .download-multi a.mb-icon img {
+        padding-top: 0.45rem;
+    }
+
+    #main-event .slick-slide,
+    #main-news .slick-slide {
+        height: 20rem;
+    }
+
+    .big-news .news-list div.has-img .news-left {
+        margin-top: 0.7rem;
+    }
+
+    #youtube li a img {
+        max-height: 148px;
+    }
+
+}
+
+@media screen and (max-width:1200px){
+    .row-w{max-width: 1100px !important}
+    .sliderContainer .slick-slide article {
+        width: calc(100% - 32px);
+        left: 2rem;
+    }
+     .sliderContainer .progressBarContainer {
+       /* width: calc(100% - 32px);
+        margin-left: calc(-50% + 20px);*/
+    }
+    .sliderContainer .progressBarContainer .bar {width: calc(100%/8 - 4.2px);}
+
+    /* 게임 리스트 */
+    .all-list._1 .pc-list .hover h3{ height: 3rem; line-height: 1.2; color: rgba(255,255,255,0.85); display:none;}
+    .all-list._1 .pc-list .hover p{margin-bottom: 1rem; text-align: right; display:none;}
+    .all-list._1 .pc-list .normal dt{line-height: 1.4;}
+
+    .btn-mb-download{height: 2.5rem;line-height: 2.5rem;}
+    .all-list._2 ul li a{font-size: 1.125rem;}
+    .all-list._1 .mobile-list h2 + ul > li, li.mb-style{margin-bottom: 4rem;}
+    li.mb-style .btn-mb-download{margin-top:0;}
+
+    .all-list._1 .pc-list .hover, .all-list._1 .mobile-list .hover-desc{
+        top: 0;
+        height: auto;
+        padding: 0rem 0.5rem 0.5rem;
+        text-align: center;
+        vertical-align: center;
+        opacity: 1;
+        -webkit-transition: all 1.75s cubic-bezier(.23,1,.32,1);
+        -moz-transition: all 1.75s cubic-bezier(.23,1,.32,1);
+        -o-transition: all 1.75s cubic-bezier(.23,1,.32,1);
+        transition: all 1.75s cubic-bezier(.23,1,.32,1);
+        background-size: cover;
+        position: relative;
+    }
+
+    .all-list._1 .mobile-list .hover-desc {padding: 0rem 0.5rem 0rem;}
+    .download-multi .btn-mb-download{margin-bottom:0;}
+
+    .all-list._1 .pc-list .hover:before, .all-list._1 .mobile-list .hover-desc:before {
+        display:none;
+        box-sizing: border-box;
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        /* background: rgba(255,255,255,0.75); */
+        background: rgba(255,255,255,0.75);
+        z-index: -1;
+    }
+
+    .all-list._1 .mobile-list .hover-desc p, .all-list._1 .mobile-list .hover-desc h3{display:none;}
+    .all-list._1 .pc-list .hover a:nth-of-type(3), .all-list._1 .pc-list .hover a:nth-of-type(4),
+    .all-list._1 .mobile-list .hover-desc  a:nth-of-type(3), .all-list._1 .mobile-list .hover-desc  a:nth-of-type(4){margin-bottom:0}
+
+    .all-list._1 .pc-list .hover{background: transparent;}
+    .all-list._1 .pc-list ul li{height: 24.25rem}
+    .all-list._1 .mobile-list h2 + ul > li{height:15rem;}
+    /* 다운로드 아이콘 */
+    .mobile-list .download-multi a.mb-icon img{padding-top:0.4rem;}
+    li.mb-style .download-multi a.mb-icon img{width:1.5rem; height: 1.5rem; padding-top: 0.5rem; vertical-align: top;}/* pc, and, ios 외 */
+
+    /* 광고 */
+    .main-cont.ad{margin-top:0;}
+}
+
+@media screen and (max-width: 1106px){
+    .sliderContainer .slick-slide article {font-size: 0.7em;}
+    .all-list._2 ul li{width: calc(33.3333% - 10px); margin-left: 15px;}
+    .all-list._2 ul li:nth-of-type(4n + 1){ margin-left: 15px; }
+    .all-list._2 ul li:nth-child(3n + 1){margin-left: 0px;}
+
+}
+
+@media screen and (max-width:1024px){
+
+    #content{padding:0 !important;}
+    #wrapper.bg-even section:last-child{padding:3rem 0 !important;}
+    section:first-child.visual {margin-top:0;margin-bottom: 3.8rem;}
+    /* home 슬라이드 1 */
+    .sliderContainer .slick-slide article {font-size: 0.7em; top: 4em;}
+    .sliderContainer article .tit{line-height:1.3;}
+    .sliderContainer .img{height: 340px;}
+    .sliderContainer .progressBarContainer .bar{ /*background:#fff; */ background: rgba(0,0,0,0.15);}
+    .sliderContainer .progressBarContainer .bar span.progressBar {height: 3em;}
+    .sliderContainer .progressBarContainer { width:100%; margin-left: 0; left: 0;
+        bottom: calc(-3em - 3px);
+        border-bottom: 3px solid #000;
+        border-top: 4px solid #000;
+        background: #000;
+    }
+    /* 전체 게임 바로가기 */
+    .see-all-top {margin-top: 6rem;}
+    /* 게임 리스트 - 호버 없이 하단에 클릭 버튼 표기 */
+    .main-more i.fa {vertical-align: middle;}
+    .all-list._1 .pc-list .normal .tit{display:none;}
+    .all-list._1 .pc-list .hover, .all-list._1 .mobile-list .hover-desc{
+        top: 0;
+        height: auto;
+        padding: 1.25rem 0.5rem 0.5rem;
+        text-align: center;
+        vertical-align: center;
+        opacity: 1;
+        -webkit-transition: all 1.75s cubic-bezier(.23,1,.32,1);
+        -moz-transition: all 1.75s cubic-bezier(.23,1,.32,1);
+        -o-transition: all 1.75s cubic-bezier(.23,1,.32,1);
+        transition: all 1.75s cubic-bezier(.23,1,.32,1);
+        background-size: cover;
+        position: relative;
+    }
+
+    .all-list._1 .pc-list .hover{padding: 0.5rem 0.5rem 0.5rem;}
+    .all-list._1 .pc-list .hover:before, .all-list._1 .mobile-list .hover-desc:before {
+        display:none;
+        box-sizing: border-box;
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        /* background: rgba(255,255,255,0.75); */
+        background: rgba(255,255,255,0.75);
+        z-index: -1;
+    }
+
+    /* 정리가 필요함 **/
+    .all-list h2 + ul > li, .all-list._1 .pc-list h2 + ul > li{width: calc(33.3333% - 7px); /* pc all game 5는 오버플로우... 7이어야 함!*/}
+    .all-list._1 .pc-list h2 + ul > li {height: auto; min-height:calc(25vw + 1rem);}
+    .all-list._1 .pc-list h2 + ul > li:nth-child(4n+1){margin-left:10px;}
+    .all-list._1 .pc-list h2 + ul > li:nth-child(3n+1){margin-left:0px;}
+
+    .all-list._1 .pc-list .hover p {margin-top: 0.5em;}
+    .all-list._1 .pc-list .normal dt{letter-spacing:0;}
+    .all-list._1 .pc-list .hover a {/*line-height: 2.5;*/}
+
+
+    /* 모바일 리스트 */
+    .all-list._1 .mobile-list h2 + ul > li{width: calc(50% - 5px);}
+    .all-list._1 .mobile-list h2 + ul > li:nth-of-type(3n+1){margin-left: 10px}
+    .all-list._1 .mobile-list h2 + ul > li:nth-child(2n + 1){margin-left: 0;}
+
+    /* 모바일 리스트 하단, 상단 여백 조정*/
+    .btn-mb-download:nth-child(2n+1){margin-bottom:0}
+    .all-list._1 .mobile-list .hover-desc{padding-top: 0;}
+    /* 인기게임 리스트*/
+    li.mb-style .btn-mb-download{margin-bottom:0.25rem;}
+
+    /* VFUN MISSION */
+    .youtube-list.game-line .game-image {width: 68px;height: 68px;text-align: left;}
+    .youtube-list.game-line .game-txt {width: calc(100% - 68px);}
+    /* 게임명 */
+    .youtube-list.game-line .game-line-cont .game-desc .game-tit{font-size:1rem;}
+    /* 미션 desc */
+    .youtube-list.game-line .desc {font-size: 0.825rem;height:34px;}
+
+    /* main top ad */
+    .main-cont.ad {margin-top: 0;padding: 1rem 0 ;}
+
+}
+
+@media screen and ( max-width:940px ) {
+    .sliderContainer .slick-slide article {font-size: 0.65em;}
+
+    /* 인기게임 : 1줄 */
+    .two-of-third {width: 48%;}
+    .one-of-third {width: 48%; margin-left:0;}
+    li.mb-style {float:none; width: 100%;  margin: 0 0 2.75rem 0;}
+    li.mb-style:nth-of-type(3), li.mb-style:nth-of-type(4){display: none;}
+    li.mb-style .btn-mb-download{margin-top:0; width: calc(100% - 10rem); }
+    li.mb-style .img-area img {width: 8.3rem;}
+
+}
+@media screen and ( max-width:900px ) {
+    .all-list._1 .pc-list h2 + ul > li{min-height:calc(25vw + 21px);}
+
+    .all-list._2 ul li{width: calc(50% - 10px); margin-left: 10px;}
+    .all-list._2 ul li:nth-child(3n + 1){margin-left: 10px;}
+    .all-list._2 ul li:nth-of-type(4n + 1), .all-list._2 ul li:nth-child(2n + 1){ margin-left: 0px; }
+    .all-list._2 h2 + ul > li.event a:after,
+    .all-list._2 h2 + ul > li.new a:after,
+    .all-list._2 h2 + ul > li.HOT a:after{right:0}
+
+}
+@media screen and (max-width:800px){
+}
+@media screen and (max-width:812px){
+    /* 게임 홈 - 슬라이드 */
+    .visual .row-w{width:100% !important;}
+}
+@media screen and (max-width:800px){
+}
+@media screen and (max-width:768px){
+    .sliderContainer article .sub{display: none;}
+
+    .all-list._1 ul > li:nth-of-type(3n+1) { margin-left: 10px; }
+    .all-list._1 ul > li:nth-of-type(2n+1) { margin-left: 0px; }
+    .all-list._1 .pc-list .hover {height: calc(100% - 7.4rem);}
+    .all-list._1 .pc-list .hover a {line-height: 2.9;}
+
+    .all-list h2 + ul > li ,  .all-list._1 .pc-list h2 + ul > li{ width: calc(50% - 5px); margin-left: 10px;}
+
+
+    .all-list._1 .pc-list h2 + ul > li:nth-child(2n){margin-left:10px;}
+    .all-list._1 .pc-list h2 + ul > li:nth-child(2n+1){margin-left:0;}
+    .all-list._1 .pc-list h2 + ul > li {min-height:calc(36vw + 18px);}
+
+    .all-list._1 .mobile-list h2 + ul > li{height:193px;}
+
+}
+@media screen and (max-width:736px){
+
+}
+@media screen and (max-width:680px){
+
+}
+@media screen and (max-width:640px) {
+    #content {min-height: inherit;}
+    /* 섹션 여백 수정 */
+    .main-cont.all-game{padding-bottom: 0;}
+
+    .all-list._1 .pc-list ul li.event:after,
+    .all-list._1 .mobile-list h2 + ul > li.event:after
+    {position: absolute;display: inline-block;content: '';left: 1rem; top: 1rem;width:2rem;height: 2rem;background: url(https://file.valofe.com/Valofe_file/web/vfun/images/common/blit-event.png) 0 0 no-repeat; background-size: 100% auto;}
+
+    .all-list._1 .pc-list ul li.new:after,
+    .all-list._1 .mobile-list h2 + ul > li.new:after
+    {position: absolute;display: inline-block;content: '';left: 1rem; top: 1rem;width: 2rem;height: 2rem;background: url(https://file.valofe.com/Valofe_file/web/vfun/images/common/blit-new.png) 0 0 no-repeat; background-size: 100% auto;}
+
+    .all-list._1 .pc-list ul li.hot:after,
+    .all-list._1 .mobile-list h2 + ul > li.hot:after
+    {position: absolute;display: inline-block;content: '';left: 1rem; top: 1rem;width: 2rem;height: 2rem;background: url(https://file.valofe.com/Valofe_file/web/vfun/images/common/blit-hot.png) 0 0 no-repeat; background-size: 100% auto;}
+
+    .all-list._1 .pc-list ul li, .all-list._1 .mobile-list h2 + ul > li{height:auto;}
+
+    /* 게임명 2줄로 변경되면
+    게임 이미지 min height 이 변경되어야 함
+    */
+    .sliderContainer .slick-slide article {top: 2.5em;}
+    .sliderContainer article .tit{line-height:1.1; font-size: 1.2em}
+    .sliderContainer .progressBarContainer .bar {width: calc(100% / 4 - 4px);}
+
+
+/*    .sliderContainer .progressBarContainer .bar:nth-child(1) { border-bottom: 2px solid #000;}
+    .sliderContainer .progressBarContainer .bar:nth-child(2) { border-bottom: 2px solid #000;}
+    .sliderContainer .progressBarContainer .bar:nth-child(3) { border-bottom: 2px solid #000;}
+    .sliderContainer .progressBarContainer .bar:nth-child(4) { border-top: 2px solid #000;}
+    .sliderContainer .progressBarContainer .bar:nth-child(5) { border-top: 2px solid #000;}
+    .sliderContainer .progressBarContainer .bar:nth-child(6) { border-top: 2px solid #000;}*/
+    .sliderContainer .progressBarContainer .bar:nth-child(1) { border-bottom: 2px solid #000;}
+    .sliderContainer .progressBarContainer .bar:nth-child(2) { border-bottom: 2px solid #000;}
+    .sliderContainer .progressBarContainer .bar:nth-child(3) { border-bottom: 2px solid #000;}
+    .sliderContainer .progressBarContainer .bar:nth-child(4) { border-bottom: 2px solid #000;}
+    .sliderContainer .progressBarContainer .bar:nth-child(5) { border-top: 2px solid #000;}
+    .sliderContainer .progressBarContainer .bar:nth-child(6) { border-top: 2px solid #000;}
+    .sliderContainer .progressBarContainer .bar:nth-child(7) { border-top: 2px solid #000;}
+    .sliderContainer .progressBarContainer .bar:nth-child(8) { border-top: 2px solid #000;}
+
+    .sliderContainer .progressBarContainer .bar .progressBar.on{background: #fff;}
+    .sliderContainer .img{max-height: 320px;min-height: 320px; margin-left: -280px; width: auto; }
+
+    /* PC 리스트 */
+
+    .all-list h2 + ul > li{ width: 100%; float:none}
+    .all-list h2 + ul > li, .all-list._1 ul > li:nth-of-type(3n+1){ margin: 0px 0px 2rem 0px; }
+    .all-list._1 .mobile-list h2 + ul > li:nth-of-type(3n+1){margin-left:0;}
+    .all-list._1 .pc-list .img-area{ display: inline-block; width: 12rem; margin-left: 0.5rem; margin-top: 0.5rem; border-radius: 3px;}
+    .all-list._1 .pc-list .img-area .logo{display:none;}
+
+    .all-list._1 .pc-list .normal .tit {display: inline-block; width: calc(100% - 13rem); vertical-align: top; margin-top: 0.5rem;}
+    .all-list._1 .pc-list .normal dl{padding:0.5rem 0.875rem 0;}
+    .all-list._1 .pc-list .normal dd{margin-top:1rem;}
+    .all-list._1 .pc-list h2 + ul > li {min-height: auto;width: 100%;margin-left: 0;}
+    .all-list._1 .pc-list h2 + ul > li:nth-child(2n) {margin-left:0;}
+
+    /* 모바일 리스트 */
+    .all-list._1 .mobile-list h2 + ul > li{width: 100%; margin-left:0; float:none}
+    .all-list._1 .mobile-list .img-area > img, li.mb-style .img-area img {width: 8.5rem;}
+    .all-list._1 .mobile-list .img-area, li.mb-style .img-area {width: 10rem;}
+
+
+    /* 인기게임/ 랭킹 : 1줄 */
+    /*.all-list._1 .mobile-list .img-area, li.mb-style .img-area {width: 9rem; }*/
+    .two-of-third {width: 100%;}
+    .one-of-third {width: 100%; margin-left:0;}
+    li.mb-style {float:none; width: 100%;  margin: 0 0 2.75rem 0;}
+    li.mb-style .btn-mb-download { margin-top: 0.5rem; width: 100%; }
+
+    .ranking .tab-rank li a{ padding: 0.5rem 2rem; }
+    li.mb-style:nth-of-type(3), li.mb-style:nth-of-type(4) {display: block;  margin: 0 0 2.75rem 0;}
+    /* 이벤트 / 뉴스 섹션 */
+    #main-event .slick-slide, #main-news .slick-slide {
+        height: 16rem;
+    }
+    .small-news .news-list div{margin:0;}
+
+}
+@media screen and (max-width:600px){
+
+}
+
+@media screen and (max-width:586px){
+    .sliderContainer article .tit {width: /*60%*/80%; font-size: 0.95em;}
+    .sliderContainer .img{margin-left:-360px }
+    /* youtube */
+    .half.youtube .pull-right{margin-top:30px;}
+    .half.youtube .pull-right.game-txt {margin-top: 0px;}
+    .youtube-list.game-line .game-line-cont .game-desc .pull-right{margin-top :0px}
+
+    /* 카드 - 모바일 리스트 */
+
+    .all-list._1 .mobile-list h2 + ul > li{width:100%;}
+    .all-list._1 .mobile-list h2 + ul > li:nth-child(2n){margin-left:0;}
+
+    li.mb-style .download-multi a.mb-icon img{margin: 0 1rem;}
+
+    /* 리스트 - 모바일 리스트 */
+    .all-list._2 ul li{width: 100%; margin-left: 0px;}
+    .all-list._2 ul li:nth-child(3n + 1){margin-left: 0px;}
+    .all-list._2 ul li:nth-of-type(4n + 1), .all-list._2 ul li:nth-child(2n + 1){ margin-left: 0px; }
+
+
+    .big-news.half, .small-news.half{width: 100%; margin-left: 0;}
+    .small-news.half{margin-top: 4rem;}
+
+    .big-news .news-list div a {
+        position: relative;
+        display: block;
+        clear: both;
+        height: 100%;
+        width:inherit;
+        overflow:inherit;
+    }
+
+    .big-news .news-list div.has-img .news-right{
+        padding:0;
+        height: 65%;
+        width: 100%;
+        overflow: inherit;
+    }
+    .big-news .news-list div.has-img .news-right img {
+        width: inherit;
+        min-height: inherit;
+        margin: inherit;
+        max-width: 100%;
+        height: 100%;
+    }
+
+    /* 카드 뉴스 수정*/
+    .big-news .news-list div.has-img .news-left{text-align:left;}
+    .big-news .news-list div.has-img .date {
+        position: absolute;
+        bottom: inherit;
+        right: 24px;
+        font-size: 12px;
+        font-size: 0.75rem;
+        color: rgba(255,255,255,0.7);
+
+    }
+
+    .big-news .news-list div.has-img:hover .date {
+        position: absolute;
+        display: inherit;
+        margin-top:  1rem;
+        left: inherit;
+        bottom:0;
+    }
+
+    #youtube li a img {max-height: 126px;}
+
+    /* 광고 */
+    .wrap-ad-img {margin: 0;}
+    .wrap-ad-img .left, .wrap-ad-img .right{width: 100%;float:none;margin:0;}
+    .wrap-ad-img .right{margin-top:1rem;}
+}
+@media screen and (max-width:480px) {
+    .sliderContainer .img{margin-left:-380px }
+}
+@media screen and (max-width:460px){
+    .sliderContainer .img{margin-left:-400px }
+}
+
+@media screen and (max-width:414px){
+    .sliderContainer .img{margin-left:-420px }
+    .sliderContainer article .tit { width: 90%; }
+}
+@media screen and (max-width : 375px) {
+    .sliderContainer .img{margin-left:-460px }
+}
+@media screen and (max-width : 360px){
+    html{min-width:320px;}
+
+}
+@media screen and (max-width : 320px){
+
+/* 인기게임 */
+.hot-list li a.feat-link {
+    color: #fff;
+    max-width: calc(100% - 33px);
+    overflow: hidden;
+    display: inline-block;
+    white-space: nowrap;
+    vertical-align: middle;
+    font-size: 0.875rem;
+}
+
+}
+

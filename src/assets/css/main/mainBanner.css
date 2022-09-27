@@ -1,0 +1,124 @@
+@charset "UTF-8";
+
+/* *********** */
+/* 비주얼 영역 */
+/* *********** */
+.slick-track .slick-track { display: none !important; }
+.slick-slider .slick-list, .slick-slider .slick-track{clear:both;}
+
+#sync1 .sliderContainer .slick-prev{position: absolute; display:block !important; left: 76px; left: 4.75rem; top:50%; margin-top:-80px; min-width:inherit; width:51px; height: 159px;transition:all .2s linear;outline:none; background: url(https://file.valofe.com/Valofe_file/web/vfun/images/home/visual/arr_visual_l_off.png)  0 0 no-repeat;}
+#sync1 .sliderContainer .slick-next{position: absolute;display:block !important; right: 76px; right:4.75rem; top:50%; margin-top:-80px; min-width:inherit; width:51px; height: 159px;transition:all .2s linear;outline:none; background: url(https://file.valofe.com/Valofe_file/web/vfun/images/home/visual/arr_visual_r_off.png)  0 0 no-repeat;}
+
+.sliderContainer {position: relative;}
+
+.sliderContainer .slider {width:100%;}
+.sliderContainer .slick-slider {
+    position:relative;
+    overflow:hidden;
+    color: white;
+    padding:0;
+    font-size: 30px;
+    text-align: center;
+}
+
+.sliderContainer article {
+    z-index: 10;
+    position: absolute;
+    top: 64px;
+    top: 2.5em;
+    /*left: 50%;*/
+    left: calc(50% - 720px);
+    word-break: normal;
+    text-align: left;
+    font-weight: bold;
+    text-shadow: 0px 0px 2px rgba(127, 99, 54, 0.9);
+    color: #fff;
+}
+.sliderContainer .click-area{position:relative; cursor: pointer;}
+
+.sliderContainer .progressBarContainer {position: absolute; overflow:hidden; bottom: 0;  border-bottom: none; text-align:center;
+    /*left:50% 6개width: 1440px; margin-left: -720px; */
+    left:0;
+    width:100%;
+    z-index: 1;
+}
+
+
+.sliderContainer article img.logo{height: 3.5em;width: auto;}
+.sliderContainer article .tit{/*position:relative;*/display:inline-block;box-sizing:border-box;margin-top:48px;margin-top:1em;padding-right:0; width:100%;color:#fff;line-height: 1.1; font-size:40px;font-size:1.25em;font-weight:bold;}
+.sliderContainer article .sub{/*position:relative;*/display:inline-block;box-sizing:border-box;margin-top:16px;margin-top:0.5em;padding-right:0; width:100%;line-height:1.4; color:#fff;font-size:20px;font-size:1em;font-weight:normal;}
+
+.sliderContainer .slick-prev{position: absolute; display:block !important; left: 76px; left: 4.75rem; top:50%; margin-top:-80px; min-width:inherit; width:51px; height: 159px;transition:all .2s linear;outline:none; background: url(https://file.valofe.com/Valofe_file/web/vfun/images/home/visual/arr_visual_l_off.png)  0 0 no-repeat;}
+.sliderContainer .slick-next{position: absolute;display:block !important; right: 76px; right:4.75rem; top:50%; margin-top:-80px; min-width:inherit; width:51px; height: 159px;transition:all .2s linear;outline:none; background: url(https://file.valofe.com/Valofe_file/web/vfun/images/home/visual/arr_visual_r_off.png)  0 0 no-repeat;}
+
+.sliderContainer .slick-next:hover{transition:all .2s linear; background: url(https://file.valofe.com/Valofe_file/web/vfun/images/home/visual/arr_visual_l_on.png)  0 0 no-repeat;}
+.sliderContainer .slick-next:hover{transition:all .2s linear; background: url(https://file.valofe.com/Valofe_file/web/vfun/images/home/visual/arr_visual_r_on.png)  0 0 no-repeat;}
+
+
+.sliderContainer .slick-dots {bottom: -30px;}
+
+
+.sliderContainer .progressBarContainer {}
+.sliderContainer .progressBarContainer .bar {
+    display: inline-block;
+    position:relative;
+    /*width: calc(100%/6 - 4px);*/ /* 6개*/
+    width: calc(100%/8 - 5.1px); /* 8개일 때 넘침 (4.5 -> 5.1)*/
+    margin-bottom: -3px ;
+    padding: 0;
+    cursor: pointer;
+    color: white;
+}
+
+.sliderContainer .progressBarContainer .bar:last-child {
+    margin-right: 0;
+}
+
+.sliderContainer .progressBarContainer .bar span.progressBar {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 3em;
+    background-color: rgba(255, 255, 255, 0.4);
+    transition: all 0.5s ease-in;
+}
+.sliderContainer .progressBarContainer .bar:hover span.progressBar,
+.sliderContainer .progressBarContainer .bar span.progressBar.on {
+    background-color: rgba(255,255,255,0.95);
+}
+
+
+.sliderContainer .progressBarContainer .bar.swiper-pagination-bullet-active span.progressBar {
+    background-color: rgba(0,102,204,0.7);
+    width: 0%;
+    height: 100%;
+    animation: aniProgressBar 3s 0s forwards linear 1;
+    height:3em;
+}
+.sliderContainer:hover .progressBarContainer .bar.swiper-pagination-bullet-active span.progressBar {animation-play-state: paused;}
+@keyframes aniProgressBar {
+    0% {width:0;}
+    100% {width:100%}
+}
+
+.sliderContainer .progressBarContainer .bar .tit {
+    z-index:1;
+    position:absolute; box-sizing: border-box; left:0; top:0; width:100%; height:100%; padding: 0.5rem 1rem; font-size: 1rem;
+    line-height: inherit; text-align: center; vertical-align: middle; display: table !important;
+}
+.sliderContainer .progressBarContainer .bar .tit span{position: relative; display: table-cell !important;
+    color: #000; vertical-align: middle; font-size: 1rem; font-style:normal; font-weight:bold;}
+
+.sliderContainer .img{height: 100%;width: 100%; max-height: 584.77px;/* position: relative;*/}
+
+.sliderContainer .btn-more{display:inline-block; position:relative;
+    margin-top:37px; margin-top: 1.5em; height: 2em; padding-left:2em; padding-right:2em; font-size: 1em; line-height: 2;
+    color:#fff; text-align:center; background:url(https://file.valofe.com/Valofe_file/web/vfun/images/home/visual/btn_visual_more_off.png) 0 0 no-repeat; background-size: 100% 100%; }
+.sliderContainer .btn-more:hover{background:url(https://file.valofe.com/Valofe_file/web/vfun/images/home/visual/btn_visual_more_on.png) 0 0 no-repeat; background-size: 100% 100%;}
+
+.slick-slider{display:none;}.slick-slider.slick-initialized{display:block;}
+.slick-slider:not(.slick-initialized),
+.slick-slider:not(.slick-initialized) .slick-slide,
+.slick-slider:not(.slick-initialized) .slick-slide .simple-slide-container:after {
+    display: none!important;
+}

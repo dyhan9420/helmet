@@ -1,0 +1,1603 @@
+@charset "utf-8";
+/*
+2020-06-10
+vfun 헤더를 사용하는 모든 사이트
+max-width:1200px !important 로 변경해야 함
+
+*/
+html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video{
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    vertical-align:baseline;
+    background:transparent;
+    /*font-weight:400;*/
+    font-style:normal;
+}
+h1{font-style:normal;font-weight:700;}
+article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{
+    display:block;
+}
+
+nav ul, li{
+    list-style:none;
+}
+
+a{
+    margin:0;
+    padding:0;
+    vertical-align:baseline;
+    background:transparent;
+    text-decoration:none;
+}
+
+img{
+    object-fit: cover;
+    vertical-align:top;
+    -ms-interpolation-mode: bicubic;
+}
+
+hr{
+    display:block;
+    height:2px;
+    border:0;
+    margin:0;
+    padding:0;
+}
+
+html,body{font-size:16px;font-size:1rem;}
+/*공통요소*/
+
+.fa{text-rendering: optimizeLegibility;}
+
+/* COMMON.CSS */
+html{font-size:16px;}
+body{background-color:#242526;font-size:16px;font-size:1rem;
+    font-weight:400;
+    font-style:normal;
+    line-height:1;
+}
+a{-moz-transition: all .2s ease-in;-o-transition: all .2s ease-in;-webkit-transition: all .2s ease-in;transition: all .2s ease-in;}
+
+/*인풋요소 */
+/* 커스터머 서치 박스 */
+input[type="search"]{
+    z-index:10;min-width:180px;margin-bottom:12px;padding:8px 16px;height:52px;border:1px solid rgba(255, 255, 255, 0.3);
+    font-size:14px;
+    font-weight:400;background:rgba(255,255,255,0.1);color:#fff;margin-right: 30px;
+}
+
+input[type="button"],
+input[type="button" i],
+button[type="button"],
+button,
+input[type="button"].btn,
+input[type="button" i].btn,
+button[type="button"].btn,
+button.btn, .input-prepend input.btn, .btn{
+    display: inline-block;
+    box-sizing: border-box;
+    min-width:251px;
+    margin:0;
+    height: 52px;
+    align-items: flex-start;
+    border:0;
+    vertical-align:top;
+    padding:0 16px;
+    font-size:14px;
+    font-weight:bold;
+    font-style: normal;
+    text-align: center;
+    box-shadow:none;
+    text-shadow:none;
+    text-transform:uppercase;
+    color: #fff;
+    background-image:none;
+    background-color:#4c4c4c;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin-bottom: 0.5rem;
+    outline: none;
+}
+a.btn{
+    display: inline-block;
+    box-sizing: border-box;
+    min-width:251px;
+    margin:0;
+    height: 52px;
+    line-height: 52px;
+    align-items: flex-start;
+    border:0;
+    vertical-align:top;
+    padding:0 16px;
+    font-size:14px;
+    font-weight:bold;
+    font-style: normal;
+    text-align: center;
+    box-shadow:none;
+    text-shadow:none;
+    text-transform:uppercase;
+    color: #fff;
+    background-image:none;
+    background-color:#4c4c4c;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin-bottom: 0.5rem;
+    outline: none;
+}
+button[type="button"].btn-line, button.btn-line{
+    display: inline-block;
+    box-sizing: border-box;
+    min-width:251px;
+    margin:0;
+    height:52px;
+    align-items: flex-start;
+    border:0;
+    vertical-align:top;
+    padding:0 16px;
+    font-size:14px;
+    font-weight:bold;
+    font-style: normal;
+    text-align: center;
+    box-shadow:none;
+    text-shadow:none;
+    text-transform:uppercase;
+    background-image:none;
+    background-color:#fff;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin-bottom: 0.5rem;
+    border:3px solid #f39a00;
+    color:#f39a00;
+    outline: none;
+}
+a.btn-line{
+    display: inline-block;
+    box-sizing: border-box;
+    min-width:251px;
+    margin:0;
+    height:52px;
+    line-height: 47px;
+    align-items: flex-start;
+    vertical-align:top;
+    padding:0 16px;
+    font-size:14px;
+    font-weight:bold;
+    font-style: normal;
+    text-align: center;
+    box-shadow:none;
+    text-shadow:none;
+    text-transform:uppercase;
+    background-image:none;
+    background-color:#fff;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin-bottom: 0.5rem;
+    border:3px solid #f39a00;
+    color:#f39a00;
+    outline: none;
+}
+input[type="button"]:hover,
+input[type="button" i]:hover,
+button:hover,
+.btn:hover,
+button[type="button"].btn:hover,
+button.btn:hover, a.btn:hover{
+    box-sizing:border-box;
+    color: #131313;
+    background-color:#f39a00;
+    text-decoration:none;
+    transition:none;-moz-transition: all .2s ease-in;-o-transition: all .2s ease-in;-webkit-transition: all .2s ease-in;transition: all .2s ease-in;
+}
+a.btn-line:hover, button.btn-line:hover{
+    box-sizing:border-box;
+    color: #fff;
+    background-color:#f39a00;
+    text-decoration:none;
+    transition:none;-moz-transition: all .2s ease-in;-o-transition: all .2s ease-in;-webkit-transition: all .2s ease-in;transition: all .2s ease-in;
+}
+a.btn-line2:hover, button.btn-line2:hover{
+    box-sizing:border-box;
+    color: #fff;
+    background-color:#f39a00;
+    text-decoration:none;
+    transition:none;-moz-transition: all .2s ease-in;-o-transition: all .2s ease-in;-webkit-transition: all .2s ease-in;transition: all .2s ease-in;
+}
+
+a.btn-line2.right:hover,
+button.btn-line2.right:hover{
+    float:right;
+    background:#fff;
+    color:#4c4c4c;
+
+}
+a.btn-grey:hover, button.btn-grey:hover{
+    box-sizing:border-box;
+    color: #fff;
+    background-color:#f39a00;
+    text-decoration:none;
+    transition:none;-moz-transition: all .2s ease-in;-o-transition: all .2s ease-in;-webkit-transition: all .2s ease-in;transition: all .2s ease-in;
+}
+
+a.btn-line2, button.btn.btn-line2{
+    display: inline-block;
+    box-sizing: border-box;
+    min-width:unset;
+    width:calc(50% - 10px);
+    height:52px;
+    margin:0;
+    padding:0 16px;
+    align-items: flex-start;
+    vertical-align:top;
+    font-size:14px;
+    /*    font-size:1rem;*/
+    font-weight:bold;
+    font-style: normal;
+    text-align: center;
+    box-shadow:none;
+    text-shadow:none;
+    text-transform:uppercase;
+    color: #fff;
+    background-image:none;
+    background-color:#fff;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin-bottom: 0.5rem;
+    border:3px solid #f39a00;
+    color:#f39a00;
+}
+a.btn-line2.left,
+button.btn-line2.left{
+    float:left;
+}
+a.btn-line2.right,
+button.btn-line2.right{
+    width:calc(50% - 10px);
+    min-width:unset;
+    float:right;
+    background:#f39a00;
+    color:#fff;
+}
+
+a.btn-line2:hover, button.btn.btn-line2:hover{
+    background: #4f4f4f;
+    border: none;
+    color: #fff;
+}
+a.btn-line2.right:hover,
+button.btn-line2.right:hover{
+    background:#4f4f4f;
+    border:none;
+    color:#fff;
+}
+
+.btn.btn-signup, .btn.btn-signup:visited,
+.btn.btn-login, .btn.btn-login:visited{
+    display: inline-block;
+    box-sizing: border-box;
+    min-width:251px;
+    width:100%;
+    /*    height:52px;*/
+    height:47px;
+    margin:0;
+    padding:0 16px;
+    align-items: flex-start;
+    border:0;
+    vertical-align:top;
+    font-size:14px;
+    /*    font-size:1rem;*/
+    font-weight:bold;
+    font-style: normal;
+    text-align: center;
+    box-shadow:none;
+    text-shadow:none;
+    text-transform:uppercase;
+    color: #fff;
+    background-image:none;
+    background-color:#4c4c4c;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin-bottom: 0.5rem;
+}
+.btn.btn-signup:hover, .btn.btn-login:hover{
+    box-sizing:border-box;
+    color: #fff;
+    background-color:#f39a00;
+    text-decoration:none;
+    transition:none;-moz-transition: all .2s ease-in;-o-transition: all .2s ease-in;-webkit-transition: all .2s ease-in;transition: all .2s ease-in;
+}
+/* 커스터머 셀렉트 박스 */
+input, select, textarea,
+input[type="submit" i],
+input[type="reset" i],
+input[type="file" i]::-webkit-file-upload-button{
+    box-sizing: border-box;
+    display: inline-block;
+    margin:0 auto;
+    width:calc(100% - 2px);
+    padding: 16px 10px;
+    padding: 1rem 0.625rem;
+    border:0;
+    vertical-align:top;
+    /*    font-size:16px;
+        font-size:1rem;*/
+    font-size:14px;
+    font-weight:400;
+    font-style:normal;
+    text-align: left;
+    color:#6f6f6f;
+    background-color:#fff;
+    align-items: flex-start;
+    cursor: default;
+    -webkit-appearance: none; /* 네이티브 외형 감추기 */
+    -moz-appearance: none;
+    appearance: none;
+    -moz-transition: all .2s ease-in;-o-transition: all .2s ease-in;-webkit-transition: all .2s ease-in;transition: all .2s ease-in;
+}
+input[type="text"]:disabled, input[type="password"]:disabled, input[type="email"]:disabled, input[type="file"]:disabled,
+input[type="text"]:read-only, input[type="password"]:read-only, input[type="email"]:read-only, input[type="file"]:read-only{
+    font-weight:normal;color:#4f4f4f;background:#efefef;font-size:14px !important;cursor:default;
+}
+select::-ms-expand {display: none;}
+select{
+    outline:none;
+    padding:0px 14px;
+    width:calc(100% - 30px);/* 마이인포*/
+    -webkit-appearance: none; /* 네이티브 외형 감추기 */
+    -moz-appearance: none;
+    appearance: none;
+    border:1px solid #eaeaea;
+    color:#6f6f6f !important;text-align:left;/*font-size:16px;font-size:1rem;*/font-size:14px;
+    font-weight:400;
+    background: #fff url('https://file.valofe.com/Valofe_file/web/vfun/images/common/select-arrow.png') no-repeat right 50%; /* 화살표 아이콘 추가 */
+    font-size:14px;
+    height:37px;line-height:37px;
+    background-size: 20px 6px;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing:content-box;
+    box-sizing:content-box;
+}
+select:focus, select:active, select:checked{
+    outline:none;
+    -webkit-appearance: none; /* 네이티브 외형 감추기 */
+    -moz-appearance: none;
+    appearance: none;
+    border:1px solid #eaeaea;
+    font-weight:400;
+    color:#6f6f6f !important;text-align:left;/*font-size:16px;font-size:1rem;*/font-size:14px;
+    background: #fff url('https://file.valofe.com/Valofe_file/web/vfun/images/common/select-arrow-on.png') no-repeat right 50%; /* 화살표 아이콘 추가 */
+    font-size:14px;
+    background-size: 20px 6px;
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing:content-box;
+    box-sizing:content-box;
+}
+option{width:100%;border-color:transparent;background:#fff;
+    -webkit-appearance: none; /* 네이티브 외형 감추기 */
+    -moz-appearance: none;
+    appearance: none;
+    font-weight:400;
+    color:#6f6f6f !important;text-align:left;/*font-size:16px;font-size:1rem;*/font-size:14px;
+    padding:0;
+    font-weight:400;
+    font-style:normal;
+}
+
+
+/* check, hover 스타일 설정 IE, Chrome */
+select option:checked,
+select option:hover {
+    font-weight:400;
+    -webkit-appearance: none; /* 네이티브 외형 감추기 */
+    -moz-appearance: none;
+    appearance: none;
+    background: #fff url('https://file.valofe.com/Valofe_file/web/vfun/images/common/select-arrow-on.png') no-repeat right 50%; /* 화살표 아이콘 추가 */
+}
+/* check, hover 스타일 설정 FireFox */
+select option:checked,
+select option:hover {
+    font-weight:400;
+    -webkit-appearance: none; /* 네이티브 외형 감추기 */
+    -moz-appearance: none;
+    appearance: none;
+    color:#6f6f6f;
+}
+::placeholder,
+:-ms-input-placeholder,
+::-ms-input-placeholder,
+:-moz-placeholder, ::-moz-placeholder,
+::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder,
+textarea:-moz-placeholder,
+textarea::-moz-placeholder,
+textarea:-ms-input-placeholder{font-weight:400;color:#6e788e !important;text-align:left;/*font-size:16px;font-size:1rem;*/font-size:14px;}
+
+.inputfile {
+    width: 0.1px;
+    height: 0.1px;
+    opacity: 0;
+    overflow: hidden;
+    position: absolute;
+    z-index: -1;
+}
+.inputfile-2 + label {
+    color: #d3394c;
+}
+.inputfile + label {
+    max-width: 80%;
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    padding: 0.625rem 1.25rem;
+}
+
+.inputfile + label {
+    box-sizing:border-box;
+    max-width: 100%;
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    cursor: pointer;
+    display: inline-block;
+    overflow: hidden;
+    padding: 0.5625rem 1rem;
+}
+
+.inputfile-2 + label {
+    color: #d3394c;
+    text-align:center;
+}
+.inputfile-2 {position:absolute;}
+.inputfile-2 + label {
+    box-sizing:border-box;
+    border: 1px solid #eaeaea;
+    background-color: #fff;
+    width:100%;
+    height:40px;
+    padding: 0.5625rem 1rem;
+    font-size: 16px;
+    font-size: 1rem;
+}
+
+.inputfile-2 + label span{color:#6f6f6f;}
+
+.inputfile-2 + label span, .inputfile-2 + label strong {
+    padding: 0.5625rem 1rem;
+    font-size: 16px;
+    font-size: 1rem;
+}
+.inputfile-2 + label.file-name-label{box-sizing:border-box;width:100%;position:relative;}
+.inputfile-2 + label span.file-name{box-sizing:border-box;position:absolute;left:0;margin-top:-7px;width:calc(100% - 90px);text-align:left;overflow:hidden;}
+.inputfile-2 + label strong {
+    position: absolute;
+    display: inline-block;
+    box-sizing: border-box;
+    height: 40px;
+    width: 90px;
+    line-height: 20px;
+    right: 0;
+    padding-left: 10px;
+    margin-top: -9px;
+    text-align: center;
+    color: #fff;
+    background-color: #A9A9A9;
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+}
+.inputfile-2 + label strong:hover, .inputfile-2 + label strong:focus{
+    background-color: #4c4c4c;
+}
+.inputfile-2 + label strong .fa{color:#fff;font-size:1rem;padding:0;margin-right:6px;}
+/* 커스터머 이메일 */
+input[type="text"], input[type="password"], input[type="email"], input[type="file"] {
+    box-sizing: border-box;
+    display: inline-block;
+    margin:0 auto;
+    padding:9px 16px;
+    width:100%;
+    vertical-align:top;
+    -webkit-appearance: none; /* 네이티브 외형 감추기 */
+    -moz-appearance: none;
+    appearance: none;
+    border:1px solid #eaeaea;
+    font-weight:400;
+    font-style:normal;
+    text-align: left;
+    color:#4f4f4f!important;
+    text-align:left;
+    /*    font-size:16px;
+        font-size:1rem;*/
+    font-size:14px;
+    background-color:#fff;
+    align-items: flex-start;
+    cursor: default;
+    -webkit-appearance: none; /* 네이티브 외형 감추기 */
+    -moz-appearance: none;
+    appearance: none;
+    -moz-transition: all .2s ease-in;-o-transition: all .2s ease-in;-webkit-transition: all .2s ease-in;transition: all .2s ease-in;
+}
+input[type="text"]:disabled, input[type="password"]:disabled, input[type="email"]:disabled, input[type="file"]:disabled,
+input[type="text"]:read-only, input[type="password"]:read-only, input[type="email"]:read-only, input[type="file"]:read-only{
+    font-weight:400;color:#4f4f4f;background:#efefef;font-size:14px /*16px !important*/;cursor:default;
+}
+/*text area*/
+textarea{box-sizing:border-box;display:inline-block;margin:0 auto;padding:9px 16px;padding:0.5625rem 1rem;width:100%;height:180px;border:1px solid #eaeaea;resize:none;
+    font-weight:400;
+    background:#fff;
+}
+
+input[type="checkbox"]{
+    vertical-align:middle;
+    -webkit-appearance: none;-moz-appearance: none;appearance: none;
+    position:relative;width:20px;height:20px;padding:0;margin:0px 4px 0px 0px;background:/* #4c4c4c */#fafafa;border:1px solid #9c9c9c !important;
+}
+input[type="checkbox"]:checked{background:#4c4c4c;border:1px solid #9c9c9c !important;}
+input[type="checkbox"]:checked:after{position:absolute;content:'';display:inline-block;margin:0;top:0px;left:0px;/*width:19px;height:19px;line-height:20px; text-align:center;font-size:14px;font-size:0.875rem;font-weight:700;background:#f39a00; */border:1px solid #4c4c4c !important;width:20px;height:20px;margin-right:24px;left:-1px;top:-1px;background:#4c4c4c url(https://file.valofe.com/Valofe_file/web/vfun/images/sub/blit-check.png) 0 -2px no-repeat;}
+.mb-show{display:none;}
+/* ./ 인풋요소*/
+
+#wrapper{width:100%;overflow:hidden;position:relative;margin:0;padding:0;background:#fff;}
+#content{position:relative;min-height:800px;width:100%;z-index:0;margin-top:0;/*-56px;*//*padding:0 0 60px 0!important;padding:5rem 0;*/padding: 0;font-size:20px;font-size:1.25rem;color:#6f6f6f;}
+
+.skip-navi{width:1px;height:1px;position:absolute;top:-1px;left:-1px;text-indent:-9999px;}
+.hidden{position:absolute;width:1px;height:1px;top:-1px;left:-1px;text-indent:-9999px;}
+
+.inquiry-send .wrap-btn{max-width:inherit;margin-bottom:60px;}
+.clearfix{clear:both;}
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+.clearfix:after {
+    clear: both;
+}
+
+.pull-right{float:right;}
+.pull-left{float:left;}
+.ellipsis {display: block;overflow: hidden;white-space: nowrap;text-overflow: ellipsis;text-align:left;}
+.ellipsis-multi{position:relative;display:block;overflow: hidden;text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    word-wrap:break-word;
+    line-height:1.2;
+
+}
+.ellipsis-multi:after{display:inline-block;position:absolute;right:0;bottom:0;content:'\00b7\00b7\00b7';padding-left:8px;padding-left:0.5rem;width:32px;width:2rem;font-size:16px;font-size:1rem;background:#7387A5;color:#fff;
+    -webkit-transition: all .75s cubic-bezier(.23,1,.32,1);
+    -moz-transition: all .75s cubic-bezier(.23,1,.32,1);
+    -o-transition: all .75s cubic-bezier(.23,1,.32,1);
+    transition: all .75s cubic-bezier(.23,1,.32,1);
+    font-family:'Verdana';
+}
+/* 일립시스 라인 수  */
+.line-2{
+    -webkit-line-clamp: 2; /* 라인수 */
+    max-height:44px;
+    max-height: 2.75rem;
+}
+.line-4{
+    -webkit-line-clamp: 4; /* 라인수 */
+    max-height:70px;
+    max-height: 5rem;
+    overflow:hidden;
+}
+.line-6{
+    -webkit-line-clamp: 6; /* 라인수 */
+    max-height:132px;
+    max-height: 8.25rem;
+}
+.line-8{
+    -webkit-line-clamp: 8; /* 라인수 */
+    max-height:176px;
+    max-height: 11rem;
+}
+.row-w{/* overflow:hidden; 이 속성은 비번찾기등의 제목의 높이가 반응형에서 가려지게 만듦 */margin:0 auto;box-sizing:border-box;width:100%;max-width:1100px !important;}
+a{-moz-transition: all .2s ease-in;-o-transition: all .2s ease-in;-webkit-transition: all .2s ease-in;transition: all .2s ease-in;}
+.wrap-btn{width:100%;max-width:400px;margin:34px auto 0;margin:2.215rem auto 0;text-align:center;}
+
+.inquiry-send .wrap-btn{max-width:inherit;}
+
+.color-y{color:#f39a00 !important;}
+.color-r{color:#bf0303;}
+.color-dk-grey{color:#4f4f4f;}
+.color-md-grey{color:#808080;}
+.color-grey{color:#8a8a8a;}
+.color-wh{color:#fff;}
+.color-black{color:#000;}
+.color-green{color:#3bc37e;}
+.color-dk-green{color:#3f6d3f;}
+.color-bluegreen{color:#68e5e4;}
+.color-mint{color:#00a8c1;}
+.color-dk-pink{color:#db6c53;}
+.color-pink{color:#eda595;}
+.text-left{text-align:left;}
+.text-right{text-align:right;}
+.text-center{text-align:center;}
+.color-ry{color:#ff9922;}
+.color-ry2{color:#df8104;}
+.color-ry3{color:#a66405;}
+.color-lightpurple{color:#797e9f;}
+.bg-white{background:#fff !important;}
+.bg-y{background:#f39a00 !important;}
+.bg-grey{background:#F5F6F7;}
+.bg-dark-grey{background:#E6E6E6 !important;}
+.bg-light-grey{/*background:#fafafa !important*/;}
+.bg-mint{background:#71a5b0 !important;}
+/* flatform */
+.color-ry4{color:#f39a00;}
+.color-grey2{color:#4f4f4f;}
+.color-grey3{color:#6f6f6f;}
+.color-blue{color:#5282c9;}
+.color-green{color:#95c373;}
+
+.font-100{font-weight:100;}
+.font-bold{font-weight:bold;}
+.f-none{float:none;}
+.f-left{float:left;}
+.f-right{float:right;}
+
+.btn-top{z-index:9999;position:fixed;display:none;bottom:150px;right:2rem;
+    width:60px;height:60px;line-height:60px;border-radius:30px;font-size:30px;text-align:center;color:#282828;background:#ff9922;cursor:pointer;-moz-transition: all .2s ease-in;-o-transition: all .2s ease-in;-webkit-transition: all .2s ease-in;transition: all .2s ease-in;}
+.btn-top span.fa{margin-top:5px;width:60px;height:30px;line-height:30px;display:block;}
+.btn-top:hover{background:#8a5312;}
+.btn-top span.btn-top-txt{display:block;width:60px;height:16px;line-height:10px;font-size:14px;font-weight:400;color:#282828;}
+.btn-toggle{display:none;}
+table{border-collapse: collapse;cell-padding:0;cell-spacing:0;-webkit-font-smoothing: antialiased;}
+
+.mt0{margin-top:0px !important;}
+.mt10{margin-top:10px !important;}
+.mt15{margin-top:15px !important;}
+.mt20{margin-top:20px !important;}
+.mt30{margin-top:30px !important;}
+.mt34{margin-top:34px !important;}
+.mb0{margin-bottom:0px !important;}
+.mb5{margin-bottom:5px !important;}
+.mb10{margin-bottom:10px !important;}
+.mb20{margin-bottom:20px !important;}
+.mb30{margin-bottom:30px !important;}
+.mb60{margin-bottom:60px !important;}
+.mr10{margin-right:10px !important;}
+.pt0{padding-top:0px !important;}
+.pb0{padding-bottom:0px !important;}
+.pt10{padding-top:10px !important;}
+.pb10{padding-bottom:10px !important;}
+.pt15{padding-top:15px !important;}
+.pb15{padding-bottom:15px !important;}
+.pt20{padding-top:20px !important;}
+.pb20{padding-bottom:20px !important;}
+.pt30{padding-top:30px !important;}
+.pb30{padding-bottom:30px !important;}
+
+.ml1{margin-left:1rem !important;}
+.ml2{margin-left:2rem !important;}
+.ml3{margin-left:3rem !important;}
+
+.mp0{margin:0 !important; padding:0 !important;}
+/* section 공통 요소 */
+
+section{position:relative;width:100%;margin-top:46px;margin-top:2.875rem;}
+section:first-child{/*margin-top:0px; 5rem */margin-top:4rem;/*7rem*/;}
+section:last-child{margin-bottom: 86px;margin-bottom: 5.375rem;}
+
+h1{font-size:22px;font-size:1.375rem;font-weight:700;color:#4f4f4f;letter-spacing: -1px;}
+h2{font-size:24px;font-size:1.5rem;font-weight:700;color:#4f4f4f;letter-spacing: 0px;}
+h3{font-size:18px;font-size:1.125rem;font-weight:700;color:#4f4f4f;letter-spacing: 0px;}
+h4{font-size:18px;font-size:1.125rem;font-weight:700;color:#4f4f4f;letter-spacing: 0px;}
+span{font-size:inherit;}
+section.breadscrumb{background:#e5e5e5;}
+h1.breadscrumb {color:#000;font-size:1rem;text-align:left;}
+h1.breadscrumb a, h1.breadscrumb a:visited{color:#b4b4b4;}
+h1.breadscrumb a:hover, h1.breadscrumb a.on{color:#4f4f4f;}
+h1.breadscrumb .fa{color:#b4b4b4;}
+/* paging */
+.paging {
+    display: block;
+    text-align: center;
+    margin-top:36px;
+    margin-top:2.25rem;
+    margin-bottom: 36px;
+    margin-bottom: 2.25rem;
+}
+.paging.no{margin-top:0;margin-bottom:0;}
+.paging ul {
+    display: inline-block;
+    width: auto;
+    margin: 0 auto;
+}
+.paging ul li{float:left;margin-left:10px;margin-bottom: 7px;}
+.paging ul li:first-child{margin-left:0px;}
+.paging ul li a {
+    box-sizing:border-box;
+    display: inline-block;
+    width: 31px;
+    height: 31px;
+    line-height: 29px;
+    text-align: center;
+    border:1px solid #cdcdcd;
+    background:#fff;
+    font-weight:normal;
+    font-size:14px;
+}
+.paging ul li a.num, .paging ul li a.fa {
+    color: #a2a5ac;
+    -moz-transition: all .2s ease-in;
+    -o-transition: all .2s ease-in;
+    -webkit-transition: all .2s ease-in;
+    transition: all .2s ease-in;
+    font-weight:normal;
+}
+
+.paging ul li.on a.num, .paging ul li.on a.fa,
+.paging ul li a:hover, .paging ul li a:hover a.fa {font-size:14px;color: #139bb8;border:1px solid #139bb8;}
+table{width:100%;}
+table tbody th{color:#4f4f4f;}
+table tbody td{color:#6f6f6f;font-size:1rem;}
+
+/* lnb */
+#wrap-lnb{display:none;}.wrap-search{display:none;} /* 20190117 lnb  삭제 하고 crt_menu로 대체함*/
+/*#wrap-lnb{z-index:1;position:fixed;left:0;top:61px;width:100%;background:rgba(0,0,0,0.5);box-sizing:border-box;box-shadow:0px 0px 3px rgba(0,0,0,0.5);}
+.wrap-lnb-scroll{position:relative;width:calc(100% - 60px);}
+.blit-scroll{
+    z-index:1;
+    box-sizing:border-box;
+    position:absolute;top:1px;right:0;display: block;
+    width: 36px;height: 36px;
+    background:#F39A00 url(https://file.valofe.com/Valofe_file/web/vfun/images/common/blit-lnb-left.gif);
+    display:none;
+}
+.blit-scroll:before{content:'';display:block;
+    width:2px;height: 36px;
+    margin-top: 8px;
+    background: url(https://file.valofe.com/Valofe_file/web/vfun/images/common/blit-lnb-bar.png) center center no-repeat;
+    display:none;
+}
+.lnb{width:100%;float:none;margin:0;padding:0;}
+.lnb li{float:left;box-sizing:border-box;margin:0 2rem 0 0;padding:0;width:auto !important;}
+.lnb li:nth-child(1){margin-left:0;}
+.lnb li a{display:inline-block;box-sizing:border-box;padding:16px 0px;padding:1rem 0rem;line-height:20px;line-height:1.25rem;font-size:20px;font-size:1.25rem;font-weight:bold;cursor: pointer;
+    color:rgba(255,255,255,1);border-bottom: 2px solid transparent; -webkit-transition: all .2s ease-in-out; transition: all .2s ease-in-out;
+    text-shadow: 0 0 1px rgba(0,0,0,0.95);
+}
+.lnb li:nth-child(1) a{padding-left:0;}
+.lnb li .fa{font-size:20px;font-size:1.25rem;}
+.lnb li.on a, .lnb li a:hover, .lnb li a:active{color:#F39A00;border-bottom: 2px solid #F39A00;}
+.wrap-search{display:inline-block;position:relative;text-align:left;height:30px;height:1.875rem;padding-top:23px;padding-top:1.4375rem;}
+.wrap-search input[type="search"]{position: absolute;right:28px;margin-top:7px;top:0;padding:0;width: 0px;min-width:0;height:37px;border:none;border-bottom:1px solid #fff;
+    font-weight:400;!*font-size:16px;font-size:1rem;*!font-size:14px;
+    background:!*#f39a00;*!transparent;
+    outline:none;
+}
+.wrap-search button[type="button"],
+.wrap-search button[type="button"]:active,
+.wrap-search button[type="button"]:visited{
+    z-index:999;
+    min-width:0;
+    position:absolute;
+    display: inline-block;
+    box-sizing: border-box;
+    margin:0;
+    top:6px;
+    right:0;
+    width:41px;
+    height:41px;
+    padding:0 16px;
+    padding:0;
+    align-items: flex-start;
+    border:0;
+    vertical-align:top;
+!*    font-size:16px;
+    font-size:1rem;*!
+    font-size:14px;
+    font-weight:bold;
+    font-style: normal;
+    text-align: center;
+    box-shadow:none;
+    text-shadow:none;
+    text-transform:uppercase;
+    color: #fff;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-color:transparent;
+    background:url(https://file.valofe.com/Valofe_file/web/vfun/images/common/btn-lnb-sch-off.png) no-repeat center top;
+    background-size:100%;
+}
+
+.wrap-search input[type="search"]::placeholder,
+.wrap-search input[type="search"]:-ms-input-placeholder,
+.wrap-search input[type="search"]::-ms-input-placeholder,
+.wrap-search input[type="search"]:-moz-placeholder,
+.wrap-search input[type="search"]::-moz-placeholder,
+.wrap-search input[type="search"]::-webkit-input-placeholder{color:#fff !important;}*/
+
+.ui-datepicker select.ui-datepicker-month, .ui-datepicker select.ui-datepicker-year{width: 29%;}
+.ui-datepicker-title select{height:25px;line-height:25px;width: 29%;}
+
+/* 게임 : 커뮤니티 : 셀렉트 박스 - 셀렉트 박스 2개 */
+select.sel2{width: 140px;margin: 0;padding: 0px 7px;font-size: 14px;}
+
+/* 로컬 메뉴 */
+.lnb li a {padding: 0.875rem 0rem;font-size: 1rem;}
+.blit-scroll{height:36px;width:30px;top:3px;}
+.blit-scroll:before{margin-top:4px;}
+.wrap-search{padding-top:inherit;}
+.wrap-search input[type="search"]{margin-bottom:inherit;bottom:inherit;top:4px;height: 30px;}
+.wrap-search button[type="button"], .wrap-search button[type="button"]:visited{width:32px;height:32px;}
+
+/* 모바일 커런트 메뉴 레이아웃*/
+#mobileHeader, #mobileGnb, #mbSub, #mbSearch{display:none;}
+
+#mobileHeader{display:block; box-sizing:border-box; z-index:9000; position : fixed; top:0; padding-right:16px;height:60px; width:auto;
+    border-top:none;background: rgba(19,19,19,1);color: #fff;}
+#mobileHeader #crtMenu{position:absolute;display:inline-block;width:200px;left:50%;
+    margin-left: -100px;
+    line-height:60px;
+    font-size:14px;
+    font-weight:bold;
+    color:#fff;
+    cursor:pointer;
+    -webkit-transition: all .75s cubic-bezier(.23,1,.32,1);
+    -moz-transition: all .75s cubic-bezier(.23,1,.32,1);
+    -o-transition: all .75s cubic-bezier(.23,1,.32,1);
+    transition: all .75s cubic-bezier(.23,1,.32,1);
+    letter-spacing:0;
+    text-indent:0;
+    text-align:center;
+    /* 검색창 살릴 때는 지우기 */
+    /*left:inherit;
+    right:0;*/
+    /* 검색창 살릴 때는 지우기 */
+}
+#mobileHeader #crtMenu .fa-sort-up{margin-left:4px;font-size: 16px;vertical-align:middle;}
+#mobileHeader #crtMenu .fa-sort-down{margin-left:4px;padding-top: 19px;font-size: 16px;text-indent:0;vertical-align: top;}
+/* 검색 살릴 때 */
+#mobileHeader #btnTopSearch{position:absolute;
+    min-width:inherit !important;background:none;
+    top:0;right:16px;text-align:right;
+    display:inline-block;width:40px;
+    font-size:24px;line-height:57px;height:inherit;
+    color:#fff;
+    cursor: pointer;
+    outline: none;
+    border:none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    display:none; visibilty:hidden;
+}
+#mobileHeader #btnTopSearch:hover, #mobileHeader #btnTopSearch:focus, #mobileHeader #btnTopSearch:active{
+    min-width:inherit !important;background:none;
+    min-width:inherit !important;background:none;
+    top:0;right:16px;text-align:right;
+    display:inline-block;width:40px;
+    font-size:24px;line-height:57px;height:inherit;
+    cursor: pointer;
+    outline: none;
+    border:none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+#mobileHeader #mobileLogo {float: left;display: inline-block;width: 84px;height: 29px;padding-top: 8px;margin-left:16px;}
+
+#mobileHeader #btnMoblieGnb {position:absolute;right:16px;display: inline-block;width: 30px;height: 30px;line-height:37px;padding-top: 8px;color:#fff;font-size:16px;text-align: right;}
+#mobileHeader #btnMoblieGnb:hover {color:#df8104;}
+
+#mobileHeader #btnMobileDownload {position:absolute;right:16px;display: inline-block;width: 30px;height: 30px;padding-top: 8px;color:#fff;background:#df8104;font-size:16px;text-align: right;}
+#mobileHeader #btnMobileDownload:hover {color:#131313;}
+
+#mobileGnb{z-index:8870;display:block;opacity: 1;position:fixed;top: 0;right:-360px;width:300px;padding: 0px 0px 22px;background:#1f1f24;color:#fff;}
+
+/*모바일 로컬메뉴 - 서브 메뉴 */
+#closeMbSub{
+    display:none;
+    position:absolute;
+    top: 13px;
+    right: 30px;
+    width:36px;
+    height:36px;
+    z-index:9999;
+    text-align:center;
+}
+#closeMbSub.on{display:block;}
+#closeMbSub .fa{color: #000;font-size: 32px; font-weight:normal;vertical-align:middle;line-height:36px;}
+#mbSub, #mbSearch {
+    display: block;
+    z-index: 9998;
+    position:fixed;
+    opacity: 0;
+    visibility: hidden;
+    box-sizing: border-box;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    padding: 30px 32px 40px;
+    background: #fff;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+    -webkit-transition: all .75s cubic-bezier(.23, 1, .32, 1);
+    -moz-transition: all .75s cubic-bezier(.23, 1, .32, 1);
+    -o-transition: all .75s cubic-bezier(.23, 1, .32, 1);
+    transition: all .75s cubic-bezier(.23, 1, .32, 1);
+}
+#mbSub .valofe-platform{font-size:1rem; font-weight:bold;}
+#mbSearch{background:#36373c;}
+#mbSub.on, #mbSearch.on{overflow-y: auto;height: auto;opacity:1; visibility:visible;letter-spacing:-1px;max-height: calc(100vh - 60px);}
+/* mbSub 스크롤 바 */
+/* width */
+#mbSub::-webkit-scrollbar {
+    width: 4px;
+}
+
+/* Track */
+#mbSub::-webkit-scrollbar-track {
+    background: rgba(0,0,0,0.15);
+}
+
+/* Handle */
+#mbSub::-webkit-scrollbar-thumb {
+    border-radius:4px;
+    background: rgba(206,124,121,0.55);
+}
+
+/* Handle on hover */
+#mbSub::-webkit-scrollbar-thumb:hover {
+    background: rgba(206,124,121,1);
+}
+#mbSub h1{font-size:18px;font-weight:bold;color:#000;
+    padding-bottom:10px; margin-bottom: 15px;
+    border-bottom:3px solid #3F3F3F;
+}
+#mbSub ul {width:100%;}
+#mbSub ul > li{box-sizing:border-box;float:none;width:100%;padding: 10px 0 5px;}
+#mbSub ul > li > a, #mbSub > ul > li:visited > a{font-size:16px;font-weight:bold;color:#3F3F3F;}
+#mbSub ul > li.on > a, #mbSub ul > li:hover > a, #mbSub > ul > li:focus > a{color:#f39a00;font-weight:bold;}
+
+#mbSub .dep2{box-sizing:border-box;width:100%;padding:10px 20px  15px;margin-top:10px; background:#FCF3EE;}
+#mbSub .dep2 > li > a, #mbSub .dep2 > li > a:visited, #mbSub .dep2 > li > a > .fa{font-size:15px; font-size:0.9375rem; color:#000;}
+#mbSub .dep2 > li.on > a, #mbSub .dep2 > li > a:hover, #mbSub .dep2 > li > a:focus,
+#mbSub .dep2 > li.on .fa, #mbSub .dep2 > li:hover > .fa, #mbSub .dep2 > li:focus > .fa{color:#f39a00;}
+
+/* crt_menu_ home pc 사이즈  */
+#mbSub ul.dep1 {clear:both;position:relative;}
+#mbSub ul.dep1 > li{width: 47%;float: left;box-sizing:border-box;}
+#mbSub ul.dep1 > li:nth-child(1){float:left}
+#mbSub ul.dep1 > li:nth-child(2){float:right}
+#mbSub ul.dep1 > li:nth-child(3){float:left}
+#mbSub ul.dep1 > li:nth-child(4){float:none;position:absolute;top:160px;right:0;}
+#mbSub ul.dep1 > li:nth-child(5){float:none}
+#mbSub ul.dep1 > li:nth-child(6){float:none;clear: left;}
+#mbSub ul.dep1 > li:nth-child(7){float:none;position:absolute;top:368px;right:0;overflow:hidden;}
+#mbSub ul.dep2 > li{width:100%;float:none;}
+/* ./ crt_menu_ home pc 사이즈  */
+
+#mbSearch .wrap-mb-search{position:relative;overflow:hidden;margin:0;padding:0;width:100%;height:auto;}
+#mbSearch input[type="search"]{
+    position:relative;
+    right:inherit;
+    top:inherit;
+    box-sizing:border-box;
+    min-width:inherit;
+    width:calc(100% - 40px);
+    outline:none;
+    height:40px;
+    padding:0px 0px 0px 16px;
+    margin:0;
+    border-top-left-radius:8px;
+    border-bottom-left-radius:8px;
+    /*        font-size:1rem;*/
+    font-size:14px;
+    line-height:40px;
+    font-weight:bold;
+    color:#000;
+    background:#fff;
+
+}
+#mbSearch #btnMbSch{
+    position:absolute;
+    box-sizing:border-box;
+    right:0;
+    top:0;
+    margin:0;
+    min-width:inherit !important;
+    outline:none;
+    border:none;
+    width:40px;
+    height:40px;
+    padding:5px 16px;
+    border-top-right-radius:8px;
+    border-bottom-right-radius:8px;
+    color:#3F3F3F;
+    font-size:1.5rem;
+    background:#fff;
+}
+#mbSearch #btnMbSch:visited{color:#3F3F3F;}
+#mbSearch #btnMbSch:hover, #mbSearch #btnMbSch:focus{
+    color:#f39a00;
+    background:#fff;
+}
+
+#mbMenuShadow, #mbSchShadow{display:none; opacity:0; z-index:8000 !important; width:100%; height:100%; position:fixed; padding-bottom:0px;top:0; left:0;background-size:cover;background:rgba(0,0,0,0.80);}
+#mbMenuShadow.on, #mbSchShadow.on{display:block; opacity:1; z-index:8000 !important; width:100%; height:100%; position:fixed; padding-bottom:0px;top:0; left:0;background-size:cover;background:rgba(0,0,0,0.80);}
+
+
+/**/
+/* Start #canvas: aboutus, contactus, recruit(job) 공통*/
+.wrap-canvas{width:100%;position:relative;}
+#canvas {
+    z-index:1;
+    position: absolute;
+    margin:0;
+    padding:0;
+    top:0;
+    left:50%;
+    margin-left:-50%;
+    width:100%;
+    min-width:100%;
+    height:149px;
+    background: #ffffff;
+}
+/* End #canvas: aboutus, contactus, recruit(job) 공통*/
+/*about css*/
+.crt-bg{position:relative;max-width:864px;width:100%;background: url(https://file.valofe.com/Valofe_file/web/vfun/images/crt/crt-line.png) no-repeat center;}
+.crt-bg.ie{background:url(https://file.valofe.com/Valofe_file/web/vfunimages/crt/bg-sky.jpg) 0 0 repeat-x;}
+.crt-bar {position:relative;z-index:2;height: 149px;width: 100%;max-width: 864px;clear: both;}
+.crt-earth{width:208px; height:149px; position:absolute;right:0;bottom: 0px;background:url(https://file.valofe.com/Valofe_file/web/vfun/images/crt/crt-earth.png) 0 0 no-repeat;}
+.crt-robot{width:32px; height:62px; position:absolute; left:50%; margin-left:-24.27%;bottom: -4px;background:url(https://file.valofe.com/Valofe_file/web/vfun/images/crt/crt-robot.png) 0 0 no-repeat;}
+.crt-hi{width:44px; height:44px; position:absolute; left:50%; margin-left:-24.27%;bottom:64px;background:url(https://file.valofe.com/Valofe_file/web/vfun/images/crt/crt-hi.gif) 0 0 no-repeat;}
+.crt-wanna-fun{display:inline-block;position:absolute; left: 2rem;top: 1.125rem;color:#e68e77;font-size:20px;font-size:1.25rem;font-weight:bold;}
+
+/*Start aboutus- hi animation- jackinthebox
+/* #####DON'T ERASE! COPYRIGHT##### */
+/* animate.css -http://daneden.me/animate
+ * Version - 3.5.2
+ * Licensed under the MIT license - http://opensource.org/licenses/MIT
+ * Copyright (c) 2017 Daniel Eden */
+.animated {
+    animation-duration: 5s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 5s;
+    -webkit-animation-fill-mode: both;
+}
+.animated.infinite {
+    animation-iteration-count: infinite;
+    -webkit-animation-iteration-count: infinite;
+}
+.jackInTheBox {
+    animation-name: jackInTheBox;
+    -webkit-animation-name: jackInTheBox;
+}
+@-webkit-keyframes jackInTheBox {
+    from {
+        opacity: 0;
+        -webkit-transform: scale(0.1) rotate(30deg);
+        -webkit-transform-origin: center bottom;
+    }
+
+    50% {
+        -webkit-transform: rotate(-10deg);
+    }
+
+    70% {
+        -webkit-transform: rotate(3deg);
+    }
+
+    to {
+        opacity: 1;
+        -webkit-transform: scale(1);
+    }
+}
+@keyframes jackInTheBox {
+    from {
+        opacity: 0;
+        transform: scale(0.1) rotate(30deg);
+        transform-origin: center bottom;
+    }
+
+    50% {
+        transform: rotate(-10deg);
+    }
+
+    70% {
+        transform: rotate(3deg);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+/* END jackinthebox */
+
+
+/* gcoin info 영역 */
+.gcoin-info{width:100%;padding:24px 0 0 !important ;padding:1.5rem 0 0 !important;
+    background-color:transparent !important;
+    background-image:url(https://file.valofe.com/Valofe_file/web/vfun/images/common/gcoin/bg_gcoin.jpg) !important;
+    background-position:center !important;
+    background-repeat: no-repeat !important;
+    background-size:cover !important;
+}
+.gcoin-info .img-gcoin{margin-left:4rem; margin-right: 4rem;}
+.gcoin-info .desc{display:inline-block; float:inherit;padding: 32px 0 0; padding: 2rem 0 0; }
+
+.gcoin-info .tit{display:block; margin-bottom: 1.5rem; line-height: 1.2; font-size: 45px; font-size: 2.8125rem; color: #fff; font-weight: bold; letter-spacing: -2px;}
+.gcoin-info .btn.gcoin{ vertical-align: middle;  padding: 0 2rem 0 1.75rem; margin-bottom:0.5rem; min-width: auto; height: 2rem; line-height: 2rem; border-radius: 3px; color:#242424; letter-spacing: 0;
+    background: linear-gradient(230deg, #a24bcf, #4b79cf, #4bc5cf);
+    background-size: 300% 300%;
+    -webkit-animation: MoveBG 5s ease infinite;
+    -moz-animation: MoveBG 5s ease infinite;
+    -o-animation: MoveBG 5s ease infinite;
+    animation: MoveBG 5s ease infinite;
+}
+@-webkit-keyframes MoveBG {
+    0%{background-position:0% 84%}
+    50%{background-position:100% 16%}
+    100%{background-position:0% 84%}
+}
+
+@-moz-keyframes MoveBG {
+    0%{background-position:0% 84%}
+    50%{background-position:100% 16%}
+    100%{background-position:0% 84%}
+}
+@-o-keyframes MoveBG {
+    0%{background-position:0% 84%}
+    50%{background-position:100% 16%}
+    100%{background-position:0% 84%}
+}
+@keyframes MoveBG {
+    0%{background-position:0% 84%}
+    50%{background-position:100% 16%}
+    100%{background-position:0% 84%}
+}
+.gcoin-info .btn.gcoin:hover{/*background-color: #f39a00;*/ background-color:rgba(60,159,253, 0.75); color:#fff; }
+.gcoin-info .define{display:block; margin-top: 0.5rem; margin-bottom: 0.5rem; font-size: 24px; font-size: 1.5rem; color: #ffc61d; }
+.gcoin-info .sentence{line-height: 1.5; font-size: 18px; font-size: 1.125rem; color:#808080; word-break: keep-all; }
+:lang(jp). gcoin-info .sentence,
+:lang(tw). gcoin-info .sentence,
+:lang(zh). gcoin-info .sentence{word-break: break-all;}
+
+/* 플로팅 수정 */
+#floating {
+    position: fixed;
+    display: inline-block;
+    text-indent: -9999rem
+}
+
+#floating.ad.main {
+    right: 3rem;
+    top: 6rem;
+    bottom: inherit;
+    width: 9.5625rem;
+    height: 14.5rem;
+    z-index: 9980;
+    background-image: url(https://file.valofe.com/Valofe_file/web/vfun/images/common/renewal_promo/floating-promo-main.png),url(https://file.valofe.com/Valofe_file/web/vfun/images/common/renewal_promo/floating-logo-icam.png);
+    background-size: 100% 9.9375rem,100% 4.0625rem;
+    background-position: 0 top,0 bottom;
+    background-repeat: no-repeat,no-repeat
+}
+
+#floating.ad.main:hover,#floating.ad.main:focus {
+    background-image: url(https://file.valofe.com/Valofe_file/web/vfun/images/common/renewal_promo/floating-promo-main-on.png),url(https://file.valofe.com/Valofe_file/web/vfun/images/common/renewal_promo/floating-logo-icam-on.png)
+}
+
+#floating.ad.main {
+    background-image: url(https://file.valofe.com/Valofe_file/web/vfun/images/common/renewal_promo/floating-promo-icam-open_chr.png);
+    background-size: 100% auto;
+    background-repeat: no-repeat
+}
+
+#floating.ad.main:hover,#floating.ad.main:focus {
+    background-image: url(https://file.valofe.com/Valofe_file/web/vfun/images/common/renewal_promo/floating-promo-icam-open_chr-on.png)
+}
+
+#floating.ad.main {
+    z-index: 9990;
+    background-image: url(https://file.valofe.com/Valofe_file/web/vfun/images/common/renewal_promo/floating-promo-grand-open2.png), url(https://file.valofe.com/Valofe_file/web/vfun/images/common/renewal_promo/floating-logo-icam.png);
+}
+
+#floating.ad.main:hover, #floating.ad.main:focus {
+    background-image: url(https://file.valofe.com/Valofe_file/web/vfun/images/common/renewal_promo/floating-promo-grand-open-on2.png), url(https://file.valofe.com/Valofe_file/web/vfun/images/common/renewal_promo/floating-logo-icam-on.png);
+}
+@keyframes jumping {
+    0%{ transform: translateY(0rem);}
+    20%{ transform: translateY(1rem); }
+    40%{ transform: translateY(0rem); }
+    60%{ transform: translateY(1rem); }
+    80%{ transform: translateY(0rem); }
+    100%{ transform: translateY(0rem); }
+}
+@-webkit-keyframes jumping {
+    0%{ transform: translateY(0rem);}
+    20%{ transform: translateY(1rem); }
+    40%{ transform: translateY(0rem); }
+    60%{ transform: translateY(1rem); }
+    80%{ transform: translateY(0rem); }
+    100%{ transform: translateY(0rem); }
+}
+
+@-moz-keyframes jumping {
+    0%{ transform: translateY(0rem);}
+    20%{ transform: translateY(1rem); }
+    40%{ transform: translateY(0rem); }
+    60%{ transform: translateY(1rem); }
+    80%{ transform: translateY(0rem); }
+    100%{ transform: translateY(0rem); }
+}
+
+
+.guide-link{width:100%;padding:70px 0;padding:5rem 0;background:url(https://file.valofe.com/Valofe_file/web/vfun/images/common/bg_guide.jpg) center top no-repeat !important; background-size:cover;}
+.game-line .guide-link .row-w{background:none;border:none;padding:0;}
+.guide-link h1{text-align:center; padding-bottom: 2.5rem; font-size:1.5625rem; font-weight:bold;color:#fff; letter-spacing:2px;}
+.guide-link ul{width:660px;margin:0 auto;}
+.guide-link ul li{width:220px; float:left;}
+.guide-link ul li a {display:block;width:100%;text-align:center;opacity: 0.75;}
+.guide-icon{display:inline-block;}
+.guide-link ul li a .guide-txt{ display:block;margin-top:10px; width:100%;
+    text-align:center; text-transform: uppercase; font-weight:bold; font-size: 18px; font-size: 1.125rem; color:#fff;
+}
+.guide-link ul li:hover a .guide-txt, .guide-link ul li:focus a .guide-txt{color:#242424; }
+
+#valofe-footer{margin-bottom: 50px;padding-bottom:25px;}
+#vfun-fixed-footer{
+    position:fixed;
+    left:0;bottom:0;
+    width:100%;
+    height:50px;
+
+    border-top:1px solid #dfdfdf;
+    background:#F5F5F5;/*#d9edf7*/;
+}
+#vfun-fixed-footer ul{
+    box-sizing:border-box;
+    width:auto;
+}
+#vfun-fixed-footer ul.menu{float:left;}
+#vfun-fixed-footer ul.go-to{float:right}
+#vfun-fixed-footer ul li{float:left; width: 80px; text-align:center; border-right: 1px solid /*#d9edf7*/#dfdfdf;}
+#vfun-fixed-footer ul.go-to li:first-child{border-left: 1px solid /*#d9edf7*/#dfdfdf;}
+#vfun-fixed-footer ul.go-to li:last-child{border-right:none;}
+#vfun-fixed-footer ul li a {
+    display: inline-block;
+    /*    margin-right: 7px;*/
+    text-align: center;
+    vertical-align: middle;
+    width: 100%;
+    height: 50px;
+    line-height: 12px;
+    font-size: 11px;
+    color:#838a99;
+}
+#vfun-fixed-footer ul li a span.fa {
+    display: inline-block;
+    /*    margin-right: 7px;*/
+    text-align: center;
+    vertical-align: middle;
+    width: 32px;
+    height: 32px;
+    line-height: 38px;
+    font-size: 22px;
+    /*  color:#6db9c9;민트*/
+    color:#82AEE7;
+}
+
+#vfun-fixed-footer ul.go-to li a span.fa {
+    line-height: 50px;
+    font-size: 30px;
+}
+
+#vfun-fixed-footer ul li:hover a, #vfun-fixed-footer ul li:hover a span.fa{/*민트 color:#139bb8;   */ color:#2E8DE5;}
+
+#vfun-fixed-footer ul li a#fWallet{display:block;line-height:14px;}
+.fwallet-click{cursor:pointer;display:inline-block;margin-top:8px;height:21px; line-height:21px; width:21px; border-radius:11.5px;
+    background:url(https://file.valofe.com/Valofe_file/web/vfun/images/common/icon-fwallet.png) 0 0 no-repeat;
+}
+.fwallet-click:hover{background:url(https://file.valofe.com/Valofe_file/web/vfun/images/common/icon-fwallet-on.png) 0 0 no-repeat;}
+
+
+
+#vfun-fixed-footer ul#fVwallet{position:absolute;display:none;left:50%;margin-left:-345px;top:-180px;width:150px;box-sizing:border-box;padding:11px 9px 0px; background:#fff; border-radius:3px;box-shadow:0 0 2px rgba(0,0,0,0.4); z-index:9999}
+#vfun-fixed-footer ul#fVwallet li{float:none;padding:12px 4px 0px;border-top:1px solid #dedede; border-right:0; width:auto}
+#vfun-fixed-footer ul#fVwallet li:first-child{padding-top:0; padding-bottom:0; border-top:0;}
+#vfun-fixed-footer ul#fVwallet li.coin span{float:left;display:inline-block;width:26px;height:26px;line-height: 27px;border:2px solid #c8bea8;border-radius:15px;background:#ffb400;color:#fff;font-weight:bold;font-size: 13px;text-align:center;}
+#vfun-fixed-footer ul#fVwallet li.point span{float:left;display:inline-block;width:26px;height:26px;line-height: 27px;border:2px solid #9ec0c6;border-radius:15px;background:#00a3c0;color:#fff;font-weight:bold;font-size: 13px;text-align:center;}
+
+#vfun-fixed-footer ul#fVwallet li div{width:124.5px}
+#fVwallet table{float:left;display:table;width:calc(100% - 32px);border:none;text-align:right;}
+#fVwallet table:hover th, #vwallet table:hover td{color: #238ba3;}
+#fVwallet th{margin:0;padding:0;color:#444;text-align:right;font-size:12px;line-height:16px;height:16px;font-weight:bold;}
+#fVwallet td{margin:0;padding:0;color:#444;text-align:right;font-size:12px;line-height:16px;height:16px;}
+#fVwallet a.btn-charge{width:100%;display:block;height:24px;margin-top:5px;margin-bottom:12px;box-sizing: border-box;line-height: 10px;padding: 6px 16px;font-size: 12px;margin-left: 0px;margin-right: 0px;border-radius:6px;border: 1px solid #b6ccd1;text-align: center;color: #286c7c;font-weight: bold;text-transform:uppercase; letter-spacing: 0.25px; text-align:center;}
+#fVwallet a.btn-charge:hover{background: #b6ccd1;}
+
+/* 모바일 커런트 메뉴 */
+@media screen and (max-width:1200px){
+    /*rem 비율 조정 13px = rem;*/
+    html{font-size:13px;}
+    .row-w{width:calc(100% - 32px) !important;}
+    .inputfile-2 + label strong {line-height:24px;}
+    .inputfile-2 + label span.file-name{margin-top:-3px;}
+
+    /*서포트 키워드 서치*/
+    .wrap-lnb-scroll{width: calc(100% - 40px);}
+    .wrap-search input[type="search"]{height:36px;}
+    .blit-scroll{top:4px;width:63px;background-position:-3px}
+    .blit-scroll:before{content:'';display:block;width:2px;height:27px;margin-top:5px;background: url(https://file.valofe.com/Valofe_file/web/vfun/images/common/blit-lnb-bar.png) center center no-repeat;}
+    .wrap-search button[type="button"], .wrap-search button[type="button"]:visited{width:36px;height:36px;}
+
+
+    /* CRT lnb 위치 */
+    #mbSub ul.dep1 > li:nth-child(4) {top: 144px;}
+    #mbSub ul.dep1 > li:nth-child(7) {top: 341px;}
+    /* End #canvas: aboutus, contactus, recruit(job) 공통*/
+    /*about css*/
+    .crt-bg{position:relative;max-width:100%;width:100%;background: url(https://file.valofe.com/Valofe_file/web/vfun/images/crt/crt-line.png) no-repeat center;}
+    .crt-bg.ie{background:url(https://file.valofe.com/Valofe_file/web/vfun/images/crt/bg-sky.jpg) 0 0 repeat-x;}
+    .crt-bar {position:relative;z-index:2;height: 149px;width: 100%;max-width: 100%; clear: both;}
+    .crt-earth{width:208px; height:149px; position:absolute;right:0;bottom: 0px;background:url(https://file.valofe.com/Valofe_file/web/vfun/images/crt/crt-earth.png) 0 0 no-repeat;}
+    .crt-robot{width:32px; height:62px; position:absolute; left:50%; margin-left:-24.27%;bottom: -4px;background:url(https://file.valofe.com/Valofe_file/web/vfun/images/crt/crt-robot.png) 0 0 no-repeat;}
+    .crt-hi{width:44px; height:44px; position:absolute; left:50%; margin-left:-24.27%;bottom:64px;background:url(https://file.valofe.com/Valofe_file/web/vfun/images/crt/crt-hi.gif) 0 0 no-repeat;}
+
+    /* gcoin info */
+    .gcoin-info .img-gcoin{width: 15rem;/*margin-left:4rem; margin-right: 4rem;*/}
+    .gcoin-info .desc{display:inline-block; width: calc(100% - 24rem); float:inherit;padding: 32px 0 0; padding: 2rem 0 0; }
+    .gcoin-info .tit {line-height: 1.4;font-size: 29px;font-size: 2.125rem; letter-spacing: -0.125rem;}
+    .gcoin-info .btn.gcoin{margin-bottom:2rem;}
+    .gcoin-info .sentence {font-size: 1rem;}
+
+}
+
+@media screen and (max-width:1140px){
+    /* 월럿 위치 */
+    #vfun-fixed-footer ul#fVwallet{position:absolute;display:none;left:230px;margin-left:0px;top:-180px;width:150px;box-sizing:border-box;padding:11px 9px 0px; background:#fff; border-radius:3px;box-shadow:0 0 2px rgba(0,0,0,0.4); z-index:9999}
+
+}
+@media screen and (max-width:1024px){
+
+    #content{min-height:600px;padding:0 0 30px 0 !important;}
+    #wrapper.bg-even section:last-child{padding-bottom:30px}
+    #valofe-footer{padding-top:20px;overflow:hidden;}
+    section:first-child {margin-top: 3rem;}
+    section:last-child{margin-bottom:0;}
+
+    #desktopHeader, #wrap-lnb{display:none;}
+
+    /* 커런트 메뉴 */
+    #mobileHeader #crtMenu{left: calc(50% - 50px);}
+    /* 커런트 메뉴 서브 */
+    #closeMbSub {right: 16px;}
+    #mbSub, #mbSearch {padding: 30px 16px 40px;}
+
+    #wrapper{top:0px;}
+
+    .wrap-search ::placeholder,
+    .wrap-search :-ms-input-placeholder,
+    .wrap-search ::-ms-input-placeholder,
+    .wrap-search :-moz-placeholder, .wrap-search ::-moz-placeholder,
+    .wrap-search ::-webkit-input-placeholder,
+    .wrap-search textarea::-webkit-input-placeholder,
+    .wrap-search textarea:-moz-placeholder,
+    .wrap-search textarea::-moz-placeholder,
+    .wrap-search textarea:-ms-input-placeholder,
+    .wrap-search input[type="search"]::placeholder,
+    .wrap-search input[type="search"]:-ms-input-placeholder,
+    .wrap-search input[type="search"]::-ms-input-placeholder,
+    .wrap-search input[type="search"]:-moz-placeholder,
+    .wrap-search input[type="search"]::-moz-placeholder,
+    .wrap-search input[type="search"]::-webkit-input-placeholder{text-align:left;font-size:12px;color:#fff !important;}
+
+
+    /* guide-link */
+    #wrapper.bg-even section:last-child.guide-link{margin-bottom:60px;}
+    .guide-link ul li a .guide-txt{font-size:1rem;}
+    .guide-link ul {width: 420px;}
+    .guide-link ul li {width: 140px;}
+    .guide-icon {width: 80%;}
+
+    /* inquiry - send button */
+    .inquiry-send .wrap-btn{margin-bottom:120px;}
+}
+/* 960 */
+@media screen and (max-width:960px){
+}
+
+/*800 */
+@media screen and (max-width:800px){
+    #m-menu-wrap #m-menu li ul li.flag{float:left;width:30px;height:30px;margin-right:10%;}
+
+    input[type="button"], input[type="button" i], button[type="button"], button, input[type="button"].btn, input[type="button" i].btn, button[type="button"].btn, button.btn, .input-prepend input.btn, .btn{
+        min-width:108px;
+    }
+    /*서포트 키워드 서치*/
+    #wrap-lnb .row-w{overflow:hidden;}
+    .lnb{width:100%;}
+    .lnb li{margin-left:1.25rem;}
+    .wrap-lnb-scroll{width:100%;}
+    .blit-scroll{width:34px;margin-top:2px;height: 34px;border-bottom:0;background-position:-8px center;}
+    .blit-scroll:before{margin-top:2px;}
+
+
+    .wrap-search ::placeholder,
+    .wrap-search :-ms-input-placeholder,
+    .wrap-search ::-ms-input-placeholder,
+    .wrap-search :-moz-placeholder, .wrap-search ::-moz-placeholder,
+    .wrap-search ::-webkit-input-placeholder,
+    .wrap-search textarea::-webkit-input-placeholder,
+    .wrap-search textarea:-moz-placeholder,
+    .wrap-search textarea::-moz-placeholder,
+    .wrap-search textarea:-ms-input-placeholder{color:#ff9900 !important;text-align:left;font-size:12px;}
+
+    .wrap-search{padding-top:17px;border-top:1px solid rgba(255,255,255,0.3);margin-bottom:8px;width:100%;float:none;}
+    .wrap-search input[type="search"]{margin-top:6px;right:8px;padding-left:10px;min-width:calc(100% - 38px);height:31px;font-size:12px;background:#fff;color:#4f4f4f;}
+    .wrap-search button[type="button"], .wrap-search button[type="button"]:visited{top:8px;width:34px;height:34px;}
+}
+/* 768 736*/
+@media screen and (max-width:768px) {
+    .guide-link {padding: 3rem 0;}
+    /* 페이징 */
+    .paging ul li{margin-left:1px;}
+    .paging ul li a{width: 24px;height: 24px;line-height: 22px;}
+
+    /* gcoin 안내 */
+    .gcoin-info {padding: 2.5rem 0 0;    background: url(//vfun.valofe.com/static/images/common/gcoin/bg_gcoin.jpg) -140px -169px no-repeat;}
+    .gcoin-info .img-gcoin{ vertical-align: bottom; }
+    .gcoin-info .sentence { padding-bottom: 2.5rem;}
+
+
+    /* floating */
+    #floating.ad.main { width: 7rem; top: 15rem;  height: 10.5rem; background-size: 100% 7.25rem, 100% 3rem;
+       /* animation: jumping 2.7s 2s infinite forwards;
+        -webkit-animation: jumping 2.7s 2s infinite forwards;
+        -moz-animation: jumping 2.7s 2s infinite forwards;*/
+    }
+    /* floating cbt */
+    #floating.ad.main { width: 7rem; top: 15rem;  height: 10.5rem; background-size: 100% auto;
+    }
+}
+
+/*  667 640 */
+@media screen and (max-width:667px){
+
+}
+@media screen and (max-width:640px){
+
+    /* guide-link */
+    #wrapper.bg-even section:last-child.guide-link {
+        padding: 2rem 0 !important;
+    }
+    .guide-link ul li a .guide-txt{font-size:1rem;}
+    .guide-link ul {width: 300px;/* 400 */}
+    .guide-link ul li {width: 100px;}
+
+    /* 하단 푸터 메뉴 */
+
+    #vfun-fixed-footer ul.go-to{width:/*33.33333*/20%;box-sizing:border-box;margin-left:5%;}
+    #vfun-fixed-footer ul.menu{width:/*66.66667*/75%;box-sizing:border-box;}
+
+    #vfun-fixed-footer ul.menu li {width: 25%;box-sizing:border-box;}
+    #vfun-fixed-footer ul.go-to li {width: 50%;box-sizing:border-box;}
+    #vfun-fixed-footer ul.go-to li:first-child {border-left: none;border-right:none;}
+
+    #vfun-fixed-footer ul li a span.fa {
+        font-size: 16px;
+    }
+    #vfun-fixed-footer ul.go-to li a span.fa {
+        line-height: 50px;
+        font-size: 24px;
+    }
+    /* 월럿 위치 */
+    #vfun-fixed-footer ul#fVwallet{left:55%;margin-left:-15px;}
+
+}
+@media screen and (max-width:600px){
+
+}
+/* 568 533 */
+
+@media screen and (max-width:568px){
+    /* floating */
+#floating.ad.main { width: 7rem; top: 6rem; height: 10.5rem; background-size: 100% 7.25rem, 100% 3rem; }
+}
+
+@media screen and (max-width:576px){
+    /* crt_menu_ home pc 사이즈  */
+
+    /* crt_menu_1024 사이즈  */
+    #mbSub ul.dep1 {clear:both;position:relative;}
+    #mbSub ul.dep1 > li{width: 100%;float: none;}
+    #mbSub ul.dep1 > li:nth-child(1){float:none}
+    #mbSub ul.dep1 > li:nth-child(2){float:none}
+    #mbSub ul.dep1 > li:nth-child(3){float:none}
+    #mbSub ul.dep1 > li:nth-child(4){float:none;position:inherit;top:inherit;right:inherit;}
+    #mbSub ul.dep1 > li:nth-child(5){float:none;}
+    #mbSub ul.dep1 > li:nth-child(6){float:none;}
+    #mbSub ul.dep1 > li:nth-child(7){float:none;position:inherit;top:inherit;right:inherit;}
+
+    /* dep2 주황색 여백 조정*/
+    #mbSub .dep2 {padding: 2px 20px 8px;margin-top: 7px;}
+    /* 월럿 위치 */
+    #vfun-fixed-footer ul#fVwallet{left:55%;margin-left:-25px;}
+
+    .gcoin-info {padding: 2.5rem 0 3rem;}
+    .gcoin-info .row-w > div {text-align:center;}
+    .gcoin-info .img-gcoin {overflow: hidden; width: 12rem; height: 12rem; border-radius: 50%; margin: 0 auto; border: 4px solid dimgrey;}
+    .gcoin-info .desc {width: 100%;margin:0; text-align:center;}
+    .gcoin-info .sentence, .gcoin-info .define{display: none;}
+
+    .gcoin-info {padding: 2.5rem 0 0;background: url(//vfun.valofe.com/static/images/common/gcoin/bg_gcoin.jpg) -140px bottom  no-repeat;}
+}
+/* 533 */
+@media screen and (max-width:533px){
+    /* 월럿 위치 */
+    #vfun-fixed-footer ul#fVwallet{left:55%;margin-left:-33px;}
+}
+/* 480 */
+@media screen and (max-width:480px){
+    .mb-show{display:inline-block;}
+    /* 브레드 스크럼 */
+    h1.breadscrumb,
+    h1.breadscrumb a
+    h1.breadscrumb a:hover {font-size:1rem;}
+    /* guide-link */
+    .guide-link ul li a .guide-txt{font-size:0.8725rem;}
+    .guide-link ul {width: 252px;/*336*/}
+    .guide-link ul li {width: 84px;}
+
+}
+@media screen and (max-width:460px){
+
+}
+@media screen and (max-width:414px){
+
+}
+@media screen and (max-width:375px) {
+
+}
+@media screen and (max-width:360px){
+    /* lnb 슬라이드 블릿 */
+    /* 페이징 */
+    .paging ul li{margin-left:1px;}
+    .paging ul li a{width: 20px;height: 20px;line-height: 18px;font-size: 11px;}
+    #vfun-fixed-footer ul li a{font-size:10px;}
+
+}
+@media screen and (max-width:320px){
+    html{min-width:300px;}
+    /* 페이징 */
+    .paging ul li{margin-left:1px;}
+    .paging ul li a{width: 19px;height: 19px;line-height: 17px;}
+}
+/* 어사이드 */
+#aside{ z-index: 7000;/* CRT shadow 8000 */ position: fixed; right:-192px;bottom: 72px;opacity:1;box-shadow:0 0 6px rgba(0,0,0,0.25); border-radius:8px;}
+#btn-close-aside{display:inline-block;position:absolute;top:24px;left:-24px;width:24px;height:37px;background:url(https://file.valofe.com/Valofe_file/web/vfun/images/common/xmas/btn-arrow-default.png) 0 0 no-repeat;}
+#btn-close-aside:hover{display:inline-block;position:absolute;top:24px;left:-24px;width:24px;height:37px;background:url(https://file.valofe.com/Valofe_file/web/vfun/images/common/xmas/btn-arrow-default-on.png) 0 0 no-repeat;}
+#btn-close-aside.show{display:inline-block;position:absolute;top:24px;left:-24px;width:24px;height:37px;background:url(https://file.valofe.com/Valofe_file/web/vfun/images/common/xmas/btn-arrow-show.png) 0 0 no-repeat;}
+#btn-close-aside.show:hover{display:inline-block;position:absolute;top:24px;left:-24px;width:24px;height:37px;background:url(https://file.valofe.com/Valofe_file/web/vfun/images/common/xmas/btn-arrow-show-on.png) 0 0 no-repeat;}
+.sticky {position: fixed;}
+.abs { position: absolute;}
+
+@media screen and (max-width : 1024px ){
+    #aside{ right:-192px;}
+}
