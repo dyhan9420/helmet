@@ -1,5 +1,4 @@
 import React from 'react';
-import { Helmet } from 'react-helmet-async';
 import { useEffect, useState, useRef} from "react";
 import { Link } from 'react-router-dom'
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -14,16 +13,12 @@ import '../../assets/css/common/common.css'
 import '../../assets/css/main/main.css'
 import '../../assets/css/common/fontawesome.css'
 import '../../assets/css/main/mainBanner.css'
+//import MetaTag from "../../routes/SEOMetaTag";
 
 
 
 
 function Main(props) {
-    const params = {
-
-    }
-
-
     // 메인배너 슬라이드
     let gameName = '';
     useEffect( ()=> {
@@ -234,25 +229,14 @@ function Main(props) {
 
     return (
         <>
-
-            <Helmet>
-                <title>리액트 헬멧 어싱크 Main</title>
-                <meta name="description" content="설명설명" />
-                <meta name="keywords" content="키워드, 키워드1, 키워드2, 키워드3" />
-
-                <meta property="og:type" content="website" />
-                <meta property="og:title" content="리액트 헬멧 어싱크 Main" />
-                <meta property="og:site_name" content="리액트 헬멧 어싱크 Main" />
-                <meta property="og:description" content="설명설명" />
-                <meta property="og:image" content="https://file.valofe.com/Valofe_file/web/blacksquad-r2/images/landing/pre_obt/meta_tw-min.jpg" />
-                <meta property="og:url" content="https://vfun.valofe.com/home" />
-
-                <meta name="twitter:title" content="리액트 헬멧 어싱크 Main" />
-                <meta name="twitter:description" content="설명설명" />
-                <meta name="twitter:image" content="https://file.valofe.com/Valofe_file/web/blacksquad-r2/images/landing/pre_obt/meta_tw-min.jpg" />
-
-                <link rel="canonical" href="https://vfun.valofe.com/home" />
-            </Helmet>
+            {/*<MetaTag
+                title="메인메인타이틀"
+                description="메인설명설명"
+                keywords="메인키워드, 메인메인, 메인"
+                ogimg="https://file.valofe.com/Valofe_file/web/blacksquad-r2/images/landing/pre_obt/meta_fb-min.jpg"
+                twimg="https://file.valofe.com/Valofe_file/web/blacksquad-r2/images/landing/pre_obt/meta_tw-min.jpg"
+                url="https://vfun.valofe.com/home"
+            />*/}
             <div id="wrapper" className="bg-even clearfix">
                 <div id="content" className="clearfix">
                     <section className="visual">
@@ -316,6 +300,7 @@ function Main(props) {
                     <div className="row-w clearfix see-all-top ">
                         <Link to="#allGame" className="go-to-section smooth-goto" ><span className="fas fa-angle-double-down"></span>&nbsp;All Games</Link>
                     </div>
+
 
                     <section className="pointshop">
                         <div className="row-w clearfix">
@@ -474,27 +459,27 @@ function Main(props) {
                                 </ul>
                                 {
                                     weekly ?
-                                    <ol className="rank-list _1 on  clearfix">
-                                        <li><span className="rank _1">1</span>&nbsp;<strong className="ellipsis">lawnoob</strong><div className="pull-right piling"><span className="blit">Points</span><span className="num">4,995</span></div></li>
-                                        <li><span className="rank _2">2</span>&nbsp;<strong className="ellipsis">skullmarc</strong><div className="pull-right piling"><span className="blit">Points</span><span className="num">4,995</span></div></li>
-                                        <li><span className="rank _3">3</span>&nbsp;<strong className="ellipsis">alancccai</strong><div className="pull-right piling"><span className="blit">Points</span><span className="num">4,995</span></div></li>
-                                        <li><span className="rank _4">4</span>&nbsp;<strong className="ellipsis">Ver0nka</strong><div className="pull-right piling"><span className="blit">Points</span><span className="num">4,995</span></div></li>
-                                        <li><span className="rank _5">5</span>&nbsp;<strong className="ellipsis">agaewaszym7804</strong><div className="pull-right piling"><span className="blit">Points</span><span className="num">4,995</span></div></li>
-                                        <li><span className="rank _6">6</span>&nbsp;<strong className="ellipsis">R500ULTRA</strong><div className="pull-right piling"><span className="blit">Points</span><span className="num">4,995</span></div></li>
-                                        <li><span className="rank _7">7</span>&nbsp;<strong className="ellipsis">karolinaszym2004</strong><div className="pull-right piling"><span className="blit">Points</span><span className="num">4,995</span></div></li>
-                                        <li><span className="rank _8">8</span>&nbsp;<strong className="ellipsis">lanzalot046</strong><div className="pull-right piling"><span className="blit">Points</span><span className="num">4,995</span></div></li>
-                                    </ol>
-                                    :
-                                    <ol className="rank-list _2  on clearfix">
-                                        <li><span className="rank _1">1</span>&nbsp;<strong className="ellipsis">aurelus11</strong><div className="pull-right piling"><span className="blit">Points</span><span className="num">21,978</span></div></li>
-                                        <li><span className="rank _2">2</span>&nbsp;<strong className="ellipsis">RafiStefano</strong><div className="pull-right piling"><span className="blit">Points</span><span className="num">21,978</span></div></li>
-                                        <li><span className="rank _3">3</span>&nbsp;<strong className="ellipsis">znek777</strong><div className="pull-right piling"><span className="blit">Points</span><span className="num">21,978</span></div></li>
-                                        <li><span className="rank _4">4</span>&nbsp;<strong className="ellipsis">Ver0nka</strong><div className="pull-right piling"><span className="blit">Points</span><span className="num">20,979</span></div></li>
-                                        <li><span className="rank _5">5</span>&nbsp;<strong className="ellipsis">agaewaszym7804</strong><div className="pull-right piling"><span className="blit">Points</span><span className="num">19,980</span></div></li>
-                                        <li><span className="rank _6">6</span>&nbsp;<strong className="ellipsis">hauser2</strong><div className="pull-right piling"><span className="blit">Points</span><span className="num">19,980</span></div></li>
-                                        <li><span className="rank _7">7</span>&nbsp;<strong className="ellipsis">alaannahueel</strong><div className="pull-right piling"><span className="blit">Points</span><span className="num">18,981</span></div></li>
-                                        <li><span className="rank _8">8</span>&nbsp;<strong className="ellipsis">Negro_78</strong><div className="pull-right piling"><span className="blit">Points</span><span className="num">18,981</span></div></li>
-                                    </ol>
+                                        <ol className="rank-list _1 on  clearfix">
+                                            <li><span className="rank _1">1</span>&nbsp;<strong className="ellipsis">lawnoob</strong><div className="pull-right piling"><span className="blit">Points</span><span className="num">4,995</span></div></li>
+                                            <li><span className="rank _2">2</span>&nbsp;<strong className="ellipsis">skullmarc</strong><div className="pull-right piling"><span className="blit">Points</span><span className="num">4,995</span></div></li>
+                                            <li><span className="rank _3">3</span>&nbsp;<strong className="ellipsis">alancccai</strong><div className="pull-right piling"><span className="blit">Points</span><span className="num">4,995</span></div></li>
+                                            <li><span className="rank _4">4</span>&nbsp;<strong className="ellipsis">Ver0nka</strong><div className="pull-right piling"><span className="blit">Points</span><span className="num">4,995</span></div></li>
+                                            <li><span className="rank _5">5</span>&nbsp;<strong className="ellipsis">agaewaszym7804</strong><div className="pull-right piling"><span className="blit">Points</span><span className="num">4,995</span></div></li>
+                                            <li><span className="rank _6">6</span>&nbsp;<strong className="ellipsis">R500ULTRA</strong><div className="pull-right piling"><span className="blit">Points</span><span className="num">4,995</span></div></li>
+                                            <li><span className="rank _7">7</span>&nbsp;<strong className="ellipsis">karolinaszym2004</strong><div className="pull-right piling"><span className="blit">Points</span><span className="num">4,995</span></div></li>
+                                            <li><span className="rank _8">8</span>&nbsp;<strong className="ellipsis">lanzalot046</strong><div className="pull-right piling"><span className="blit">Points</span><span className="num">4,995</span></div></li>
+                                        </ol>
+                                        :
+                                        <ol className="rank-list _2  on clearfix">
+                                            <li><span className="rank _1">1</span>&nbsp;<strong className="ellipsis">aurelus11</strong><div className="pull-right piling"><span className="blit">Points</span><span className="num">21,978</span></div></li>
+                                            <li><span className="rank _2">2</span>&nbsp;<strong className="ellipsis">RafiStefano</strong><div className="pull-right piling"><span className="blit">Points</span><span className="num">21,978</span></div></li>
+                                            <li><span className="rank _3">3</span>&nbsp;<strong className="ellipsis">znek777</strong><div className="pull-right piling"><span className="blit">Points</span><span className="num">21,978</span></div></li>
+                                            <li><span className="rank _4">4</span>&nbsp;<strong className="ellipsis">Ver0nka</strong><div className="pull-right piling"><span className="blit">Points</span><span className="num">20,979</span></div></li>
+                                            <li><span className="rank _5">5</span>&nbsp;<strong className="ellipsis">agaewaszym7804</strong><div className="pull-right piling"><span className="blit">Points</span><span className="num">19,980</span></div></li>
+                                            <li><span className="rank _6">6</span>&nbsp;<strong className="ellipsis">hauser2</strong><div className="pull-right piling"><span className="blit">Points</span><span className="num">19,980</span></div></li>
+                                            <li><span className="rank _7">7</span>&nbsp;<strong className="ellipsis">alaannahueel</strong><div className="pull-right piling"><span className="blit">Points</span><span className="num">18,981</span></div></li>
+                                            <li><span className="rank _8">8</span>&nbsp;<strong className="ellipsis">Negro_78</strong><div className="pull-right piling"><span className="blit">Points</span><span className="num">18,981</span></div></li>
+                                        </ol>
                                 }
 
 
@@ -1273,93 +1258,93 @@ function Main(props) {
                                 <div className="youtube-list clearfix">
                                     <ul className="" id="youtube">
                                         <Slider {...settingsVideo}>
-                                        <li>
-                                            <div className="wrap-li">
-                                                <Link to="javascript:void(0)" className="btn-play">
-                                                    <img src="https://i.ytimg.com/vi/gAYmoByyqRI/mqdefault.jpg" />
-                                                </Link>
+                                            <li>
+                                                <div className="wrap-li">
+                                                    <Link to="javascript:void(0)" className="btn-play">
+                                                        <img src="https://i.ytimg.com/vi/gAYmoByyqRI/mqdefault.jpg" />
+                                                    </Link>
 
-                                                <dl>
-                                                    <dt>Super Fantasy War: Mộng Ảo Thánh Chiến Intro Scene</dt>
-                                                    <dd>2022-08-23</dd>
-                                                </dl>
-                                            </div>
-                                        </li>
-                                        <li>
-                                            <div className="wrap-li">
-                                                <Link to="javascript:void(0)" className="btn-play">
-                                                <img src="https://i.ytimg.com/vi/b7HAbmG6RDA/mqdefault.jpg" />
-                                            </Link>
+                                                    <dl>
+                                                        <dt>Super Fantasy War: Mộng Ảo Thánh Chiến Intro Scene</dt>
+                                                        <dd>2022-08-23</dd>
+                                                    </dl>
+                                                </div>
+                                            </li>
+                                            <li>
+                                                <div className="wrap-li">
+                                                    <Link to="javascript:void(0)" className="btn-play">
+                                                        <img src="https://i.ytimg.com/vi/b7HAbmG6RDA/mqdefault.jpg" />
+                                                    </Link>
 
-                                            <dl>
-                                                <dt>
-                                                    [ICARUS M] The Sailor Collection                                                    </dt>
+                                                    <dl>
+                                                        <dt>
+                                                            [ICARUS M] The Sailor Collection                                                    </dt>
 
-                                                <dd>2022-08-19</dd>
-                                            </dl>
-                                            </div>
+                                                        <dd>2022-08-19</dd>
+                                                    </dl>
+                                                </div>
 
-                                        </li>
-                                        <li>
-<div className="wrap-li">
-    <Link to="javascript:void(0)" className="btn-play">
-                                                <img src="https://i.ytimg.com/vi/qq5e0UkS90E/mqdefault.jpg" />
-                                            </Link>
+                                            </li>
+                                            <li>
+                                                <div className="wrap-li">
+                                                    <Link to="javascript:void(0)" className="btn-play">
+                                                        <img src="https://i.ytimg.com/vi/qq5e0UkS90E/mqdefault.jpg" />
+                                                    </Link>
 
-                                            <dl>
-                                                <dt>
-                                                    [CAC] Barbara the explorer now available!                                                    </dt>
+                                                    <dl>
+                                                        <dt>
+                                                            [CAC] Barbara the explorer now available!                                                    </dt>
 
-                                                <dd>2022-08-16</dd>
-                                            </dl>
-</div>
+                                                        <dd>2022-08-16</dd>
+                                                    </dl>
+                                                </div>
 
-                                        </li>
-                                        <li>
-                                            <div className="wrap-li">
-                                                                                            <Link to="javascript:void(0)" className="btn-play">
-                                                <img src="https://i.ytimg.com/vi/EanOB6KDEfw/mqdefault.jpg" />
-                                            </Link>
+                                            </li>
+                                            <li>
+                                                <div className="wrap-li">
+                                                    <Link to="javascript:void(0)" className="btn-play">
+                                                        <img src="https://i.ytimg.com/vi/EanOB6KDEfw/mqdefault.jpg" />
+                                                    </Link>
 
-                                            <dl>
-                                                <dt>
-                                                    Atlantica Online: Splash Around this August!                                                    </dt>
+                                                    <dl>
+                                                        <dt>
+                                                            Atlantica Online: Splash Around this August!                                                    </dt>
 
-                                                <dd>2022-08-11</dd>
-                                            </dl>
-                                            </div>
+                                                        <dd>2022-08-11</dd>
+                                                    </dl>
+                                                </div>
 
-                                        </li>
-                                        <li>
-                                            <div className="wrap-li">
-                                                <Link to="javascript:void(0)" className="btn-play">
-                                                <img src="https://i.ytimg.com/vi/s9TiJguGVL0/mqdefault.jpg" />
-                                            </Link>
+                                            </li>
+                                            <li>
+                                                <div className="wrap-li">
+                                                    <Link to="javascript:void(0)" className="btn-play">
+                                                        <img src="https://i.ytimg.com/vi/s9TiJguGVL0/mqdefault.jpg" />
+                                                    </Link>
 
-                                            <dl>
-                                                <dt>
-                                                    The Tiger Hunter: Yubok [Luminary]                                                    </dt>
+                                                    <dl>
+                                                        <dt>
+                                                            The Tiger Hunter: Yubok [Luminary]                                                    </dt>
 
-                                                <dd>2022-08-10</dd>
-                                            </dl>
-                                            </div>
+                                                        <dd>2022-08-10</dd>
+                                                    </dl>
+                                                </div>
 
-                                        </li>
-                                        <li>
-                                            <div className="wrap-li">
-                                                                                            <Link to="javascript:void(0)" className="btn-play">
-                                                <img src="https://i.ytimg.com/vi/nj_12lShTx4/mqdefault.jpg" />
-                                            </Link>
+                                            </li>
+                                            <li>
+                                                <div className="wrap-li">
+                                                    <Link to="javascript:void(0)" className="btn-play">
+                                                        <img src="https://i.ytimg.com/vi/nj_12lShTx4/mqdefault.jpg" />
+                                                    </Link>
 
-                                            <dl>
-                                                <dt>
-                                                    It&#39;s the VFUN Summer Event!                                                    </dt>
+                                                    <dl>
+                                                        <dt>
+                                                            It&#39;s the VFUN Summer Event!                                                    </dt>
 
-                                                <dd>2022-08-09</dd>
-                                            </dl>
-                                            </div>
+                                                        <dd>2022-08-09</dd>
+                                                    </dl>
+                                                </div>
 
-                                        </li>
+                                            </li>
                                         </Slider>
                                     </ul>
                                 </div>
@@ -1371,38 +1356,34 @@ function Main(props) {
                         <div className="row-w">
                             <div className="pull-left half big-news">
                                 <h1>
-                                    Event&nbsp;<Link to="/community/event" target="_self" className="main-more"><i className="fa fa-plus"></i></Link>
+                                    Event&nbsp;
+                                    <Link to="/community/event" target="_self" className="main-more"><i className="fa fa-plus"></i></Link>
                                     <div className="pull-right">
-                            <span className="wrap-page-num" id="eventNum">
-                                                            </span>
-                                        {/*<div className="cont-nav" id="event-nav">
-                                            <span id="event-prev" className="nav-prev"><span className="fa fa-angle-left"></span></span>
-                                            <span id="event-next" className="nav-next"><span className="fa fa-angle-right"></span></span>
-                                        </div>*/}
+                                        <span className="wrap-page-num" id="eventNum"></span>
                                     </div>
                                 </h1>
                                 <div id="main-event" className="news-list">
                                     <Slider {...settingsEvent}>
                                         <div className="no-img">
-                                            <Link to="http://at.valofe.com/news/detail/4/898" target="_self">
+                                            <Link to="#" target="_self">
                                                 <div className="news-left">
                                                     <dl>
                                                         <dt>
-                                                            <img src="https://file.valofe.com/Valofe_file/web/vfun/images/icon/icon_pc_at_ko.png"/> Atlantica Online (NA)                                                    </dt>
-                                                        <dd className="ellipsis-multi line-2">
-                                                            Valkyria's Blessing (August)                                                    </dd>
-                                                        <dd className="line-4 text">
-                                                            Atlantica Online (NA) Event!                                                    </dd>
+                                                            <img src="https://file.valofe.com/Valofe_file/web/vfun/images/icon/icon_pc_at_ko.png"/>
+                                                            Atlantica Online (NA)
+                                                        </dt>
+                                                        <dd className="ellipsis-multi line-2">Valkyria's Blessing (August)</dd>
+                                                        <dd className="line-4 text">Atlantica Online (NA) Event!</dd>
                                                     </dl>
                                                     <span className="date">2022-08-11</span>
                                                 </div>
                                             </Link>
                                         </div>
                                         <div className="has-img event_1">
-                                            <Link href="https://forums.valofe.com/forum/icarus-global/news-and-announcements/contests-and-events/64701-pet-capture-fan-art-contest"
+                                            <Link to="https://forums.valofe.com/forum/icarus-global/news-and-announcements/contests-and-events/64701-pet-capture-fan-art-contest"
                                                   target="_self" tabIndex="0">
                                                 <div className="news-right eventRight_1">
-                                                    <img src="https://forums.valofe.com/filedata/fetch?id=64702&amp;d=1663739881" onError="ImgException(&quot;event&quot;, &quot;1&quot;, &quot;https://file.valofe.com/Valofe_file/web/vfun/images/icon/icon_pc_icarus-na.png&quot;, &quot;Riders of ICARUS&quot;, &quot;Pet Capture Fan Art Contest!&quot;, &quot;Greetings Riders!   We have once again opened the doors for our creative/artistic players to participate in an art competition for all of the...&quot;, &quot;2022-09-21&quot;);"/>
+                                                    <img src="https://forums.valofe.com/filedata/fetch?id=64702&amp;d=1663739881" />
                                                 </div>
                                                 <div className="news-left eventLeft_1">
                                                     <dl>

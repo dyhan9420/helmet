@@ -14,14 +14,14 @@ function MetaTag(props) {
             <meta property="og:title" content={props.title} />
             <meta property="og:site_name" content={props.title} />
             <meta property="og:description" content={props.description} />
-            <meta property="og:image" content={props.imgsrc} />
+            <meta property="og:image" content={props.ogimg} />
             <meta property="og:url" content={props.url} />
 
             <meta name="twitter:title" content={props.title} />
             <meta name="twitter:description" content={props.description} />
-            <meta name="twitter:image" content={props.imgsrc} />
+            <meta name="twitter:image" content={props.twimg} />
 
-            <link rel="canonical" href={props.url} />
+            <link rel="canonical" to={props.url} />
         </Helmet>
     );
 };

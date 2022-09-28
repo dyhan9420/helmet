@@ -1,19 +1,12 @@
 import React from 'react';
-import { Helmet } from 'react-helmet-async';
-import { useEffect, useState, useRef} from "react";
+// MetaTag from "../../routes/SEOMetaTag";
 import { Link } from 'react-router-dom'
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-
-import styled from 'styled-components';
-import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 import '../../assets/css/common/reset.css'
 import '../../assets/css/common/common.css'
-import '../../assets/css/main/main.css'
-import '../../assets/css/common/fontawesome.css'
-import '../../assets/css/main/mainBanner.css'
+
 
 
 
@@ -25,24 +18,14 @@ function AllGames(props) {
 
     return (
         <>
-            <Helmet>
-                <title>서브서브서브타이틀</title>
-                <meta name="description" content="서브서브설명설명" />
-                <meta name="keywords" content="서브서브키워드, 서브키워드1, 키워드2, 키워드3" />
-
-                <meta property="og:type" content="website" />
-                <meta property="og:title" content="서브서브타이틀" />
-                <meta property="og:site_name" content="서브서브타이틀" />
-                <meta property="og:description" content="서브서브설명설명" />
-                <meta property="og:image" content="https://file.valofe.com/Valofe_file/web/meta/meta-tw-fishisland-sea.jpg" />
-                <meta property="og:url" content="https://vfun.valofe.com/home" />
-
-                <meta name="twitter:title" content="서브서브타이틀" />
-                <meta name="twitter:description" content="서브서브설명설명" />
-                <meta name="twitter:image" content="https://file.valofe.com/Valofe_file/web/meta/meta-tw-fishisland-sea.jpg" />
-
-                <link rel="canonical" href="https://vfun.valofe.com/home" />
-            </Helmet>
+            {/*<MetaTag
+                title="서브서브타이틀11"
+                description="서브설명설명"
+                keywords="서브키워드, 서브, 서브"
+                ogimg="https://file.valofe.com/Valofe_file/web/meta/meta-fb-fishisland-sea.jpg"
+                twimg="https://file.valofe.com/Valofe_file/web/meta/meta-tw-fishisland-sea.jpg"
+                url="https://vfun.valofe.com/home"
+            />*/}
             <div id="wrapper" className="bg-even clearfix">
                 <div id="content" className="clearfix">
                     <section className="sorting-nav">
@@ -50,18 +33,14 @@ function AllGames(props) {
                             <h1>
                                 All Games </h1>
                             <ul>
-                                <li className="on" id="all_list"><a href="javascript:void(0);" title="All Games"
-                                                                    onClick="changeType('ALL');"><span
-                                    className="fas fa-list-ul"></span>&nbsp;All</a></li>
-                                <li className="" id="pc_list"><a href="javascript:void(0);" title="PC&nbsp;Game"
-                                                                 onClick="changeType('PC');"><span
-                                    className="fas fa-desktop"></span></a></li>
-                                <li className="" id="aos_list"><a href="javascript:void(0);" title="Android&nbsp;Game"
-                                                                  onClick="changeType('Android');"><span
-                                    className="fab fa-android"></span></a></li>
-                                <li className="" id="ios_list"><a href="javascript:void(0);" title="iOS&nbsp;Game"
-                                                                  onClick="changeType('iOS');"><span
-                                    className="fab fa-apple"></span></a></li>
+                                <li className="on" id="all_list"><Link to="#" title="All Games">
+                                    <span className="fas fa-list-ul"></span>&nbsp;All</Link></li>
+                                <li className="" id="pc_list"><Link to="#" title="PC&nbsp;Game">
+                                    <span className="fas fa-desktop"></span></Link></li>
+                                <li className="" id="aos_list"><Link to="#" title="Android&nbsp;Game">
+                                    <span className="fab fa-android"></span></Link></li>
+                                <li className="" id="ios_list"><Link to="#" title="iOS&nbsp;Game">
+                                    <span className="fab fa-apple"></span></Link></li>
                             </ul>
                         </div>
                     </section>
@@ -76,8 +55,7 @@ function AllGames(props) {
 
                                     <li className="game-line-cont clearfix">
 
-                                        <div className="game-image pull-left "
-                                             onClick="window.open('/game/more?idx=8', '_self');">
+                                        <div className="game-image pull-left ">
                                             <img
                                                 src="https://file.valofe.com/Valofe_file/web/vfun/images/thumbnail/game/20210628/60d96aa163fd7.png"
                                                 alt="ATLANTICA Global" />
@@ -85,8 +63,8 @@ function AllGames(props) {
                                         <div className="game-txt pull-right aniInLeft">
                                             <div className="game-desc clearfix">
                                                 <div className="pull-left">
-                                                    <strong className="game-tit"><a href="/game/more?idx=8">ATLANTICA
-                                                        Global</a></strong>
+                                                    <strong className="game-tit"><Link to="/game/more?idx=8">ATLANTICA
+                                                        Global</Link></strong>
                                                     <div className="game-info">
                                                         <span className="genre">MMORPG</span>
                                                         <div className="wrap-device-all">
@@ -101,43 +79,38 @@ function AllGames(props) {
                                                         <div className="wrap-download">
                                                             <ul className="mb-down">
                                                                 <li>
-                                                                    <a href="javascript:void(0);" className="mb-icon"
-                                                                       onClick="COMMON.download('7','https%3A%2F%2Fvfun-cdn.valofe.com%2Fvlauncher%2FVFUNLauncherInstaller.exe');">
+                                                                    <Link to="#" className="mb-icon">
                                                                         <img
                                                                             src="https://file.valofe.com/Valofe_file/web/vfun/images/common/icon-comm-pc.png"
                                                                             title="PC Download" />
-                                                                    </a>
+                                                                    </Link>
                                                                 </li>
                                                                 <li>
-                                                                    <a href="javascript:void(0);" className="mb-icon"
-                                                                       onClick="COMMON.download('28','https%3A%2F%2Fvfun-cdn.valofe.com%2Fvlauncher%2FVFUNLauncherInstaller.exe');">
+                                                                    <Link to="#" className="mb-icon">
                                                                         <img
                                                                             src="https://file.valofe.com/Valofe_file/web/vfun/images/common/icon-comm-pc.png"
                                                                             title="PC Download" />
-                                                                    </a>
+                                                                    </Link>
                                                                 </li>
                                                                 <li className="close-multi">
-                                                                    <a href="javascript:void(0);"
-                                                                       onClick="fnCloseDwMulti();"><span
-                                                                        className="fa fa-times-circle-o"></span></a>
+                                                                    <Link to="#"><span
+                                                                        className="fa fa-times-circle-o"></span></Link>
                                                                 </li>
                                                             </ul>
                                                         </div>
                                                     </div>
                                                     <ul className="desc-right">
                                                         <li>
-                                                            <a className="btn-download" href="javascript:void(0);"
-                                                               onClick="fnShowDwMulti('down_8')">
+                                                            <Link to="#" className="btn-download">
                                                                 <span
                                                                     className="fa fa-download"></span>&nbsp;&nbsp;Download
-                                                            </a>
+                                                            </Link>
                                                         </li>
                                                         <li>
-                                                            <a className="btn-like" href="javascript:void(0);"
-                                                               id="like8" onClick="COMMON.like('8');">
+                                                            <Link to="#" className="btn-like">
                                                                 &nbsp;&nbsp;<span
                                                                 className="fa fa-heart like"></span>&nbsp;&nbsp;Like
-                                                            </a>
+                                                            </Link>
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -146,8 +119,7 @@ function AllGames(props) {
                                     </li>
                                     <li className="game-line-cont clearfix">
 
-                                        <div className="game-image pull-left "
-                                             onClick="window.open('/game/more?idx=33', '_self');">
+                                        <div className="game-image pull-left ">
                                             <img
                                                 src="https://file.valofe.com/Valofe_file/web/vfun/images/thumbnail/game/20210712/60ebc2a060a0d.jpg"
                                                 alt="C9 Global" />
@@ -155,8 +127,8 @@ function AllGames(props) {
                                         <div className="game-txt pull-right aniInLeft">
                                             <div className="game-desc clearfix">
                                                 <div className="pull-left">
-                                                    <strong className="game-tit"><a href="/game/more?idx=33">C9
-                                                        Global</a></strong>
+                                                    <strong className="game-tit"><Link to="/game/more?idx=33">C9
+                                                        Global</Link></strong>
                                                     <div className="game-info">
                                                         <span className="genre">MMORPG</span>
                                                         <div className="wrap-device-all">
@@ -171,35 +143,32 @@ function AllGames(props) {
                                                         <div className="wrap-download">
                                                             <ul className="mb-down">
                                                                 <li>
-                                                                    <a href="javascript:void(0);" className="mb-icon"
-                                                                       onClick="COMMON.download('86','https%3A%2F%2Fvfun-cdn.valofe.com%2Fvlauncher%2FVFUNLauncherInstaller.exe+');">
+                                                                    <Link to="#" className="mb-icon">
                                                                         <img
                                                                             src="https://file.valofe.com/Valofe_file/web/vfun/images/common/icon-comm-pc.png"
                                                                             title="PC Download" />
-                                                                    </a>
+                                                                    </Link>
                                                                 </li>
                                                                 <li className="close-multi">
-                                                                    <a href="javascript:void(0);"
-                                                                       onClick="fnCloseDwMulti();"><span
-                                                                        className="fa fa-times-circle-o"></span></a>
+                                                                    <Link to="#"><span
+                                                                        className="fa fa-times-circle-o"></span></Link>
                                                                 </li>
                                                             </ul>
                                                         </div>
                                                     </div>
                                                     <ul className="desc-right">
                                                         <li>
-                                                            <a className="btn-download" href="javascript:void(0);"
-                                                               onClick="COMMON.download('86','https%3A%2F%2Fvfun-cdn.valofe.com%2Fvlauncher%2FVFUNLauncherInstaller.exe+');">
+                                                            <Link to="#" className="btn-download">
                                                                 <span
                                                                     className="fa fa-download"></span>&nbsp;&nbsp;Download
-                                                            </a>
+                                                            </Link>
                                                         </li>
                                                         <li>
-                                                            <a className="btn-like" href="javascript:void(0);"
-                                                               id="like33" onClick="COMMON.like('33');">
+                                                            <Link to="#" className="btn-like"
+                                                               id="like33">
                                                                 &nbsp;&nbsp;<span
                                                                 className="fa fa-heart like"></span>&nbsp;&nbsp;Like
-                                                            </a>
+                                                            </Link>
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -208,8 +177,7 @@ function AllGames(props) {
                                     </li>
                                     <li className="game-line-cont clearfix">
 
-                                        <div className="game-image pull-left "
-                                             onClick="window.open('/game/more?idx=2', '_self');">
+                                        <div className="game-image pull-left ">
                                             <img
                                                 src="https://file.valofe.com/Valofe_file/web/vfun/images/thumbnail/game/20210906/6135ac048781a.jpg"
                                                 alt="Combat Arms: Reloaded" />
@@ -217,8 +185,8 @@ function AllGames(props) {
                                         <div className="game-txt pull-right aniInLeft">
                                             <div className="game-desc clearfix">
                                                 <div className="pull-left">
-                                                    <strong className="game-tit"><a href="/game/more?idx=2">Combat Arms:
-                                                        Reloaded</a></strong>
+                                                    <strong className="game-tit"><Link to="/game/more?idx=2">Combat Arms:
+                                                        Reloaded</Link></strong>
                                                     <div className="game-info">
                                                         <span className="genre">FPS</span>
                                                         <div className="wrap-device-all">
@@ -233,67 +201,59 @@ function AllGames(props) {
                                                         <div className="wrap-download">
                                                             <ul className="mb-down">
                                                                 <li>
-                                                                    <a href="javascript:void(0);" className="mb-icon"
-                                                                       onClick="COMMON.download('2','https%3A%2F%2Fvfun-cdn.valofe.com%2Fvlauncher%2FVFUNLauncherInstaller.exe');">
+                                                                    <Link to="#" className="mb-icon">
                                                                         <img
                                                                             src="https://file.valofe.com/Valofe_file/web/vfun/images/common/icon-comm-pc.png"
                                                                             title="PC Download" />
-                                                                    </a>
+                                                                    </Link>
                                                                 </li>
                                                                 <li>
-                                                                    <a href="javascript:void(0);" className="mb-icon"
-                                                                       onClick="COMMON.download('21','https%3A%2F%2Fvfun-cdn.valofe.com%2Fvlauncher%2FVFUNLauncherInstaller.exe');">
+                                                                    <Link to="#" className="mb-icon">
                                                                         <img
                                                                             src="https://file.valofe.com/Valofe_file/web/vfun/images/common/icon-comm-pc.png"
                                                                             title="PC Download" />
-                                                                    </a>
+                                                                    </Link>
                                                                 </li>
                                                                 <li>
-                                                                    <a href="javascript:void(0);" className="mb-icon"
-                                                                       onClick="COMMON.download('19','https%3A%2F%2Fvfun-cdn.valofe.com%2Fvlauncher%2FVFUNLauncherInstaller.exe');">
+                                                                    <Link to="#" className="mb-icon">
                                                                         <img
                                                                             src="https://file.valofe.com/Valofe_file/web/vfun/images/common/icon-comm-pc.png"
                                                                             title="PC Download" />
-                                                                    </a>
+                                                                    </Link>
                                                                 </li>
                                                                 <li>
-                                                                    <a href="javascript:void(0);" className="mb-icon"
-                                                                       onClick="COMMON.download('20','https%3A%2F%2Fvfun-cdn.valofe.com%2Fvlauncher%2FVFUNLauncherInstaller.exe');">
+                                                                    <Link to="#" className="mb-icon">
                                                                         <img
                                                                             src="https://file.valofe.com/Valofe_file/web/vfun/images/common/icon-comm-pc.png"
                                                                             title="PC Download" />
-                                                                    </a>
+                                                                    </Link>
                                                                 </li>
                                                                 <li>
-                                                                    <a href="javascript:void(0);" className="mb-icon"
-                                                                       onClick="COMMON.download('18','https%3A%2F%2Fvfun-cdn.valofe.com%2Fvlauncher%2FVFUNLauncherInstaller.exe');">
+                                                                    <Link to="#" className="mb-icon">
                                                                         <img
                                                                             src="https://file.valofe.com/Valofe_file/web/vfun/images/common/icon-comm-pc.png"
                                                                             title="PC Download" />
-                                                                    </a>
+                                                                    </Link>
                                                                 </li>
                                                                 <li className="close-multi">
-                                                                    <a href="javascript:void(0);"
-                                                                       onClick="fnCloseDwMulti();"><span
-                                                                        className="fa fa-times-circle-o"></span></a>
+                                                                    <Link to="#"><span
+                                                                        className="fa fa-times-circle-o"></span></Link>
                                                                 </li>
                                                             </ul>
                                                         </div>
                                                     </div>
                                                     <ul className="desc-right">
                                                         <li>
-                                                            <a className="btn-download" href="javascript:void(0);"
-                                                               onClick="fnShowDwMulti('down_2')">
+                                                            <Link to="#" className="btn-download">
                                                                 <span
                                                                     className="fa fa-download"></span>&nbsp;&nbsp;Download
-                                                            </a>
+                                                            </Link>
                                                         </li>
                                                         <li>
-                                                            <a className="btn-like" href="javascript:void(0);"
-                                                               id="like2" onClick="COMMON.like('2');">
+                                                            <Link to="#" className="btn-like">
                                                                 &nbsp;&nbsp;<span
                                                                 className="fa fa-heart like"></span>&nbsp;&nbsp;Like
-                                                            </a>
+                                                            </Link>
                                                         </li>
                                                     </ul>
                                                 </div>
@@ -305,8 +265,8 @@ function AllGames(props) {
                         </div>
                         <div className="row-w padding-none">
                             <div className="wrap-btn">
-                                <a href="javascript:void(0);" className="more" onClick="readMore('ALL')"
-                                   id="more_load_btn"><span className="fa fa-plus-circle"></span>&nbsp;more</a>
+                                <Link to="#" className="more"
+                                   id="more_load_btn"><span className="fa fa-plus-circle"></span>&nbsp;more</Link>
                             </div>
                         </div>
                     </section>
